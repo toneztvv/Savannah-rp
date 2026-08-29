@@ -524,3 +524,15 @@ a,button{-webkit-tap-highlight-color:transparent}
   .simple-chain-flow.six-step,.verification-grid,.chain-six-step{grid-template-columns:1fr}
   .purchase-verification-box,.purchase-support-note{margin-left:5vw;margin-right:5vw;padding:26px 20px}
 }
+
+
+/* v25 - Savannah Tebex not connected yet */
+.store-coming-soon{
+  display:inline-flex;
+  align-items:center;
+  justify-content:center;
+  cursor:not-allowed;
+  opacity:.72;
+  user-select:none;
+  pointer-events:none;
+}

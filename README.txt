@@ -170,3 +170,10 @@ V24 UPDATE
 - Staff verifies the purchase before accepting the chain image.
 - Customer may also be asked for the checkout email to match the order.
 - Added a warning that staff never need passwords, full card numbers, CVV, or banking login details.
+
+
+V25 UPDATE
+----------
+- Removed every old store.traprp.com link from the Savannah RP website.
+- Store purchase links now display STORE COMING SOON and cannot redirect visitors.
+- Once the official Savannah RP Tebex URL is created, replace the Coming Soon destinations with that store.
