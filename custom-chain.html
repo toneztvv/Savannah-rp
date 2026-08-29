@@ -10,7 +10,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@500;600;700;800&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="styles.css?v=21">
+  <link rel="stylesheet" href="styles.css?v=24">
 </head>
 <body>
 <header class="nav">
@@ -37,124 +37,103 @@
 <main class="chain-order-page">
   <section class="chain-order-hero">
     <p class="eyebrow">CUSTOM COSMETIC JEWELRY</p>
-    <h1>BUILD YOUR <span>CHAIN</span></h1>
+    <h1>CUSTOM <span>CHAIN</span></h1>
     <p>
-      Submit the details for your custom Savannah RP chain. Custom chains are cosmetic-only,
-      protected from robbery/looting, and stay with the approved buyer.
+      Purchase your custom chain first, verify the purchase in a Savannah RP support ticket,
+      then upload the picture you want used.
     </p>
   </section>
 
-  <section class="chain-order-shell">
-    <div class="chain-order-info">
-      <p class="eyebrow">BEFORE YOU ORDER</p>
-      <h2>WHAT YOU NEED TO KNOW.</h2>
-      <ul>
-        <li>You must own the artwork or have permission to use it.</li>
-        <li>No unlicensed real-world brands, copyrighted characters, logos, or third-party designs.</li>
-        <li>Custom chains are cosmetic-only and provide no stat or gameplay advantage.</li>
-        <li>Paid custom chains cannot be stolen, dropped, traded, transferred, or permanently lost.</li>
-        <li>Final price may depend on design complexity and revision requests.</li>
-      </ul>
+  <section class="simple-chain-flow six-step">
+    <article>
+      <span>01</span>
+      <h3>PAY FIRST</h3>
+      <p>Purchase the Custom Chain package through the official Savannah RP Tebex store.</p>
+      <a class="btn primary" href="https://store.traprp.com" target="_blank" rel="noopener">OPEN TEBEX STORE</a>
+    </article>
+
+    <article>
+      <span>02</span>
+      <h3>OPEN A TICKET</h3>
+      <p>After payment, open the Custom Chain / Purchase Support ticket in the Savannah RP Discord.</p>
+    </article>
+
+    <article>
+      <span>03</span>
+      <h3>VERIFY PURCHASE</h3>
+      <p>Send your Tebex invoice/receipt or purchase transaction/order ID so staff can confirm the payment belongs to you.</p>
+    </article>
+
+    <article>
+      <span>04</span>
+      <h3>UPLOAD YOUR PICTURE</h3>
+      <p>After the purchase is verified, upload the exact image or design you want used for the chain directly inside the ticket.</p>
+    </article>
+
+    <article>
+      <span>05</span>
+      <h3>WE MAKE IT</h3>
+      <p>Savannah RP reviews the picture and creates the cosmetic chain from the approved design.</p>
+    </article>
+
+    <article>
+      <span>06</span>
+      <h3>NEED A FIX?</h3>
+      <p>If the finished chain comes back wrong or does not look right, keep the same ticket open and support will help resolve it.</p>
+    </article>
+  </section>
+
+  <section class="purchase-verification-box">
+    <p class="eyebrow">PURCHASE VERIFICATION</p>
+    <h2>WHAT TO SEND IN YOUR TICKET.</h2>
+    <div class="verification-grid">
+      <div>
+        <b>TEBEX RECEIPT / INVOICE</b>
+        <p>Send the purchase receipt or invoice you received after checkout.</p>
+      </div>
+      <div>
+        <b>TRANSACTION / ORDER ID</b>
+        <p>If available, include the Tebex transaction or order identifier shown on the receipt.</p>
+      </div>
+      <div>
+        <b>PURCHASE EMAIL</b>
+        <p>Staff may ask for the email used at checkout to match the purchase record. Do not send your password or payment-card details.</p>
+      </div>
     </div>
+    <p class="verification-warning">
+      Savannah RP staff will never need your Tebex password, full debit/credit card number, CVV, or online banking login.
+    </p>
+  </section>
 
-    <form id="chainOrderForm" class="chain-order-form">
-      <div class="form-section form-grid-two">
-        <div>
-          <p class="form-number">01 — BUYER</p>
-          <label for="chainDiscord">Discord username</label>
-          <input id="chainDiscord" name="chainDiscord" type="text" placeholder="@username" required>
-        </div>
-        <div>
-          <p class="form-number">&nbsp;</p>
-          <label for="chainCharacter">Character name</label>
-          <input id="chainCharacter" name="chainCharacter" type="text" placeholder="First Last" required>
-        </div>
+  <section class="simple-chain-policy">
+    <p class="eyebrow">CUSTOM CHAIN POLICY</p>
+    <h2>WHAT YOU NEED TO KNOW.</h2>
+    <div class="simple-chain-policy-grid">
+      <div>
+        <b>PURCHASE MUST BE VERIFIED</b>
+        <p>Work does not begin until staff can verify the Custom Chain purchase.</p>
       </div>
-
-      <div class="form-section">
-        <p class="form-number">02 — DESIGN</p>
-        <label for="chainName">Chain / pendant name</label>
-        <input id="chainName" name="chainName" type="text" placeholder="Example: Savannah Crown" required>
-
-        <label for="chainStyle">Chain style</label>
-        <select id="chainStyle" name="chainStyle" required>
-          <option value="">Choose a style</option>
-          <option>Thin chain</option>
-          <option>Medium chain</option>
-          <option>Heavy chain</option>
-          <option>Cuban-style chain</option>
-          <option>Tennis-style chain</option>
-          <option>Custom / discuss with designer</option>
-        </select>
-
-        <label for="chainFinish">Finish / color</label>
-        <select id="chainFinish" name="chainFinish" required>
-          <option value="">Choose a finish</option>
-          <option>Gold</option>
-          <option>White metal / silver look</option>
-          <option>Rose-gold look</option>
-          <option>Black / dark finish</option>
-          <option>Custom color</option>
-        </select>
-
-        <label for="chainDetails">Describe the pendant and details</label>
-        <textarea id="chainDetails" name="chainDetails" rows="5" placeholder="Shape, text, stones, initials, size, overall look, etc." required></textarea>
+      <div>
+        <b>PICTURE REQUIRED</b>
+        <p>After verification, the buyer uploads the exact picture directly in the support ticket.</p>
       </div>
-
-      <div class="form-section">
-        <p class="form-number">03 — ARTWORK</p>
-        <label for="artworkMethod">How will you provide the artwork?</label>
-        <select id="artworkMethod" name="artworkMethod" required>
-          <option value="">Choose one</option>
-          <option>I will upload/send the image in the Savannah RP Discord ticket</option>
-          <option>I will provide a link to my original artwork</option>
-          <option>I need Savannah RP to create an original design from my description</option>
-        </select>
-
-        <label for="artworkLink">Artwork link (optional)</label>
-        <input id="artworkLink" name="artworkLink" type="url" placeholder="https://...">
-
-        <label for="artworkNotes">Artwork notes</label>
-        <textarea id="artworkNotes" name="artworkNotes" rows="4" placeholder="Anything the designer needs to know about the image or design."></textarea>
+      <div>
+        <b>YOUR DESIGN</b>
+        <p>You must own the image or have permission to use it. Unauthorized copyrighted or trademarked material may be rejected.</p>
       </div>
-
-      <div class="form-section">
-        <p class="form-number">04 — RIGHTS & POLICY</p>
-
-        <label class="check-row">
-          <input type="checkbox" id="chainRights" required>
-          <span>I confirm that I own the submitted artwork or have permission to use it.</span>
-        </label>
-
-        <label class="check-row">
-          <input type="checkbox" id="chainNoBrands" required>
-          <span>I understand Savannah RP may reject copyrighted, trademarked, branded, or third-party material that is not authorized.</span>
-        </label>
-
-        <label class="check-row">
-          <input type="checkbox" id="chainPolicyAgree" required>
-          <span>I understand the chain is cosmetic-only and cannot be stolen, dropped, transferred, resold, or permanently lost through normal roleplay.</span>
-        </label>
+      <div>
+        <b>COSMETIC ONLY</b>
+        <p>Custom chains do not give money, stats, armor, weapons, inventory space, or any gameplay advantage.</p>
       </div>
-
-      <div class="form-actions">
-        <button class="btn primary" type="submit">GENERATE ORDER REQUEST</button>
-        <button class="btn" id="saveChainDraft" type="button">SAVE DRAFT</button>
-        <button class="btn" id="clearChainDraft" type="button">CLEAR</button>
+      <div>
+        <b>PROTECTED ITEM</b>
+        <p>Paid custom chains cannot be stolen, dropped, transferred, sold, or permanently lost through normal roleplay.</p>
       </div>
-    </form>
-
-    <section id="chainOrderOutput" class="application-output" hidden>
-      <p class="eyebrow">CUSTOM CHAIN REQUEST</p>
-      <h2>READY TO SUBMIT.</h2>
-      <p>Copy this request and paste it into the Savannah RP custom-order Discord ticket after purchase.</p>
-      <textarea id="generatedChainOrder" rows="22" readonly></textarea>
-      <div class="form-actions">
-        <button class="btn primary" id="copyChainOrder" type="button">COPY ORDER REQUEST</button>
-        <a class="btn" href="https://store.traprp.com" target="_blank" rel="noopener">OPEN TEBEX STORE</a>
+      <div>
+        <b>SUPPORT AFTER DELIVERY</b>
+        <p>If there is a problem with the finished chain, the same ticket stays open until support resolves it.</p>
       </div>
-      <p id="chainCopyStatus" class="copy-status"></p>
-    </section>
+    </div>
   </section>
 </main>
 
@@ -175,83 +154,6 @@
 </footer>
 
 <script src="script.js"></script>
-<script>
-const chainForm = document.getElementById("chainOrderForm");
-const chainOutput = document.getElementById("chainOrderOutput");
-const generatedChainOrder = document.getElementById("generatedChainOrder");
-const chainDraftKey = "savannahRPChainOrderDraft";
 
-function getChainData(){
-  const data={};
-  new FormData(chainForm).forEach((v,k)=>data[k]=v);
-  data.chainRights=document.getElementById("chainRights").checked;
-  data.chainNoBrands=document.getElementById("chainNoBrands").checked;
-  data.chainPolicyAgree=document.getElementById("chainPolicyAgree").checked;
-  return data;
-}
-
-document.getElementById("saveChainDraft").addEventListener("click",()=>{
-  localStorage.setItem(chainDraftKey, JSON.stringify(getChainData()));
-  alert("Custom chain draft saved on this device.");
-});
-
-document.getElementById("clearChainDraft").addEventListener("click",()=>{
-  localStorage.removeItem(chainDraftKey);
-  chainForm.reset();
-});
-
-(function restoreChainDraft(){
-  const raw=localStorage.getItem(chainDraftKey);
-  if(!raw) return;
-  try{
-    const data=JSON.parse(raw);
-    Object.entries(data).forEach(([k,v])=>{
-      const el=chainForm.elements[k] || document.getElementById(k);
-      if(!el) return;
-      if(el.type==="checkbox") el.checked=!!v;
-      else el.value=v;
-    });
-  }catch(e){}
-})();
-
-chainForm.addEventListener("submit",(e)=>{
-  e.preventDefault();
-  if(!chainForm.reportValidity()) return;
-  const d=new FormData(chainForm);
-
-  let text="SAVANNAH RP — CUSTOM CHAIN REQUEST\n";
-  text+="===================================\n\n";
-  text+=`DISCORD: ${d.get("chainDiscord")}\n`;
-  text+=`CHARACTER: ${d.get("chainCharacter")}\n\n`;
-  text+=`CHAIN / PENDANT NAME: ${d.get("chainName")}\n`;
-  text+=`CHAIN STYLE: ${d.get("chainStyle")}\n`;
-  text+=`FINISH / COLOR: ${d.get("chainFinish")}\n\n`;
-  text+=`DESIGN DETAILS:\n${d.get("chainDetails")}\n\n`;
-  text+=`ARTWORK METHOD:\n${d.get("artworkMethod")}\n\n`;
-  if(d.get("artworkLink")) text+=`ARTWORK LINK:\n${d.get("artworkLink")}\n\n`;
-  if(d.get("artworkNotes")) text+=`ARTWORK NOTES:\n${d.get("artworkNotes")}\n\n`;
-  text+="I CONFIRM:\n";
-  text+="- I own the submitted artwork or have permission to use it.\n";
-  text+="- I understand unauthorized copyrighted/trademarked material may be rejected.\n";
-  text+="- I understand this is a cosmetic-only protected chain entitlement.\n";
-  text+="- The paid chain cannot be stolen, dropped, transferred, resold, or permanently lost through normal RP.\n";
-
-  generatedChainOrder.value=text;
-  chainOutput.hidden=false;
-  chainOutput.scrollIntoView({behavior:"smooth",block:"start"});
-});
-
-document.getElementById("copyChainOrder").addEventListener("click",async()=>{
-  const status=document.getElementById("chainCopyStatus");
-  try{
-    await navigator.clipboard.writeText(generatedChainOrder.value);
-    status.textContent="Order request copied.";
-  }catch(e){
-    generatedChainOrder.select();
-    document.execCommand("copy");
-    status.textContent="Order request copied.";
-  }
-});
-</script>
 </body>
 </html>

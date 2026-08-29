@@ -141,3 +141,32 @@ V21 UPDATE
 - Generates a clean Discord order request.
 - Store CITY STYLE PACK now opens the clothing order page.
 - Added a Custom Cosmetic Orders hub for chains and clothing.
+
+
+V22 UPDATE
+----------
+- Added custom-vehicle.html for visual-only vehicle cosmetics.
+- Supports liveries, wraps, vanity plates, business branding, gang/crew cosmetics and other non-performance visuals.
+- Explicitly blocks paid speed, handling, armor, durability, storage or combat advantages.
+- Store VANITY PLATE package now opens the vehicle cosmetic order page.
+- Added Vehicle Cosmetics to the custom-order hub.
+
+
+V23 UPDATE
+----------
+- Simplified the Custom Chain process.
+- Customer pays first through Tebex.
+- Customer opens a Custom Chain / Support ticket.
+- Customer uploads the exact picture directly in the ticket.
+- Savannah RP creates the chain from the approved image.
+- If the finished chain is wrong or not satisfactory, the same ticket stays open until support helps resolve it.
+- Removed the old detailed chain-design form and artwork-method form.
+
+
+V24 UPDATE
+----------
+- Added Tebex purchase verification to the Custom Chain flow.
+- Customer pays first, opens a ticket, then provides receipt/invoice or transaction/order ID.
+- Staff verifies the purchase before accepting the chain image.
+- Customer may also be asked for the checkout email to match the order.
+- Added a warning that staff never need passwords, full card numbers, CVV, or banking login details.

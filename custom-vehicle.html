@@ -1,0 +1,256 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Savannah RP | Vehicle Cosmetic Order</title>
+  <meta name="description" content="Request custom vehicle cosmetics for Savannah RP.">
+  <meta name="theme-color" content="#080a0c">
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@500;600;700;800&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css?v=24">
+</head>
+<body>
+<header class="nav">
+  <a class="logo" href="index.html">
+    <span>SAVANNAH <b>RP</b></span>
+    <small>REAL CITY. REAL PEOPLE. REAL CONSEQUENCES.</small>
+  </a>
+  <button id="menuBtn" class="menu-btn" aria-label="Toggle menu">☰</button>
+  <nav id="navLinks">
+    <a href="index.html">HOME</a>
+    <a href="index.html#city">SERVER</a>
+    <a href="index.html#features">FEATURES</a>
+    <a href="rules.html">RULES</a>
+    <a href="media.html">MEDIA</a>
+    <a class="active" href="store.html">STORE</a>
+    <a href="applications.html">APPLY</a>
+    <a href="updates.html">UPDATES</a>
+    <a href="support.html">SUPPORT</a>
+    <a href="join.html">DISCORD</a>
+  </nav>
+  <div class="status"><i></i> STATUS: <strong data-server-status>CHECKING</strong></div>
+</header>
+
+<main class="vehicle-order-page">
+  <section class="chain-order-hero">
+    <p class="eyebrow">CUSTOM VEHICLE COSMETICS</p>
+    <h1>BUILD YOUR <span>LOOK</span></h1>
+    <p>
+      Request original vehicle cosmetics for Savannah RP. These options are visual-only
+      and cannot provide speed, handling, armor, durability, storage, or other gameplay advantages.
+    </p>
+  </section>
+
+  <section class="chain-order-shell">
+    <div class="chain-order-info">
+      <p class="eyebrow">BEFORE YOU ORDER</p>
+      <h2>COSMETIC ONLY.</h2>
+      <ul>
+        <li>Use Savannah RP-approved in-game vehicle models only.</li>
+        <li>No unlicensed real-world manufacturer logos, model badges, racing sponsors, or copyrighted artwork.</li>
+        <li>Original wraps, color themes, liveries, vanity plates, and other visual-only designs are allowed.</li>
+        <li>No engine, handling, armor, speed, durability, storage, weapon, or performance upgrades can be purchased here.</li>
+        <li>Savannah RP may reject designs that create copyright, trademark, platform, or quality concerns.</li>
+      </ul>
+    </div>
+
+    <form id="vehicleOrderForm" class="chain-order-form">
+      <div class="form-section form-grid-two">
+        <div>
+          <p class="form-number">01 — BUYER</p>
+          <label for="vehicleDiscord">Discord username</label>
+          <input id="vehicleDiscord" name="vehicleDiscord" type="text" placeholder="@username" required>
+        </div>
+        <div>
+          <p class="form-number">&nbsp;</p>
+          <label for="vehicleCharacter">Character name</label>
+          <input id="vehicleCharacter" name="vehicleCharacter" type="text" placeholder="First Last" required>
+        </div>
+      </div>
+
+      <div class="form-section">
+        <p class="form-number">02 — VEHICLE</p>
+
+        <label for="vehicleModel">In-game vehicle model/name</label>
+        <input id="vehicleModel" name="vehicleModel" type="text" placeholder="Example: Buffalo STX" required>
+
+        <label for="vehicleCosmeticType">What cosmetic do you want?</label>
+        <select id="vehicleCosmeticType" name="vehicleCosmeticType" required>
+          <option value="">Choose one</option>
+          <option>Custom Livery</option>
+          <option>Custom Wrap / Paint Theme</option>
+          <option>Vanity Plate</option>
+          <option>Business Vehicle Branding</option>
+          <option>Gang / Crew Vehicle Cosmetic</option>
+          <option>Event / Promotional Cosmetic</option>
+          <option>Other Visual-Only Cosmetic</option>
+        </select>
+
+        <label for="vehicleColors">Main colors</label>
+        <input id="vehicleColors" name="vehicleColors" type="text" placeholder="Example: black, gold, white" required>
+
+        <label for="vehiclePlate">Vanity plate text (optional)</label>
+        <input id="vehiclePlate" name="vehiclePlate" type="text" maxlength="12" placeholder="Example: SAVRP">
+
+        <label for="vehicleDetails">Describe the design</label>
+        <textarea id="vehicleDetails" name="vehicleDetails" rows="5" placeholder="Placement, stripes, symbols, text, patterns, overall look, etc." required></textarea>
+      </div>
+
+      <div class="form-section">
+        <p class="form-number">03 — ARTWORK</p>
+
+        <label for="vehicleArtworkMethod">How will you provide the artwork?</label>
+        <select id="vehicleArtworkMethod" name="vehicleArtworkMethod" required>
+          <option value="">Choose one</option>
+          <option>I will upload/send my original artwork in the Discord ticket</option>
+          <option>I will provide a link to my original artwork</option>
+          <option>I need Savannah RP to create an original design from my description</option>
+        </select>
+
+        <label for="vehicleArtworkLink">Artwork link (optional)</label>
+        <input id="vehicleArtworkLink" name="vehicleArtworkLink" type="url" placeholder="https://...">
+
+        <label for="vehicleArtworkNotes">Additional notes</label>
+        <textarea id="vehicleArtworkNotes" name="vehicleArtworkNotes" rows="4" placeholder="Anything the designer needs to know."></textarea>
+      </div>
+
+      <div class="form-section">
+        <p class="form-number">04 — RIGHTS & POLICY</p>
+
+        <label class="check-row">
+          <input type="checkbox" id="vehicleRights" required>
+          <span>I confirm I own the submitted artwork or have permission to use it.</span>
+        </label>
+
+        <label class="check-row">
+          <input type="checkbox" id="vehicleNoBrands" required>
+          <span>I understand unlicensed real-world manufacturer logos, copyrighted art, brands, and third-party designs may be rejected.</span>
+        </label>
+
+        <label class="check-row">
+          <input type="checkbox" id="vehicleCosmeticOnly" required>
+          <span>I understand this purchase is visual-only and gives no speed, handling, armor, durability, storage, combat, or other gameplay advantage.</span>
+        </label>
+      </div>
+
+      <div class="form-actions">
+        <button class="btn primary" type="submit">GENERATE ORDER REQUEST</button>
+        <button class="btn" id="saveVehicleDraft" type="button">SAVE DRAFT</button>
+        <button class="btn" id="clearVehicleDraft" type="button">CLEAR</button>
+      </div>
+    </form>
+
+    <section id="vehicleOrderOutput" class="application-output" hidden>
+      <p class="eyebrow">VEHICLE COSMETIC REQUEST</p>
+      <h2>READY TO SUBMIT.</h2>
+      <p>Copy this request and paste it into the Savannah RP custom-order Discord ticket after purchase.</p>
+      <textarea id="generatedVehicleOrder" rows="22" readonly></textarea>
+      <div class="form-actions">
+        <button class="btn primary" id="copyVehicleOrder" type="button">COPY ORDER REQUEST</button>
+        <a class="btn" href="https://store.traprp.com" target="_blank" rel="noopener">OPEN TEBEX STORE</a>
+      </div>
+      <p id="vehicleCopyStatus" class="copy-status"></p>
+    </section>
+  </section>
+</main>
+
+<footer>
+  <div class="logo footer-logo"><span>SAVANNAH <b>RP</b></span></div>
+  <p>© 2026 Savannah RP. All rights reserved.</p>
+  <p class="legal">Savannah RP is not approved, sponsored, or endorsed by Rockstar Games.</p>
+  <div class="footer-links">
+    <a href="guide.html">New Player Guide</a>
+    <a href="directory.html">City Directory</a>
+    <a href="team.html">Owner</a>
+    <a href="applications.html">Applications</a>
+    <a href="updates.html">Updates</a>
+    <a href="support.html">Support</a>
+    <a href="rules.html">Rules</a>
+    <a href="store.html">Store</a>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+<script>
+const vehicleForm = document.getElementById("vehicleOrderForm");
+const vehicleOutput = document.getElementById("vehicleOrderOutput");
+const generatedVehicleOrder = document.getElementById("generatedVehicleOrder");
+const vehicleDraftKey = "savannahRPVehicleOrderDraft";
+
+function getVehicleData(){
+  const data={};
+  new FormData(vehicleForm).forEach((v,k)=>data[k]=v);
+  data.vehicleRights=document.getElementById("vehicleRights").checked;
+  data.vehicleNoBrands=document.getElementById("vehicleNoBrands").checked;
+  data.vehicleCosmeticOnly=document.getElementById("vehicleCosmeticOnly").checked;
+  return data;
+}
+
+document.getElementById("saveVehicleDraft").addEventListener("click",()=>{
+  localStorage.setItem(vehicleDraftKey, JSON.stringify(getVehicleData()));
+  alert("Vehicle cosmetic draft saved on this device.");
+});
+
+document.getElementById("clearVehicleDraft").addEventListener("click",()=>{
+  localStorage.removeItem(vehicleDraftKey);
+  vehicleForm.reset();
+});
+
+(function restoreVehicleDraft(){
+  const raw=localStorage.getItem(vehicleDraftKey);
+  if(!raw) return;
+  try{
+    const data=JSON.parse(raw);
+    Object.entries(data).forEach(([k,v])=>{
+      const el=vehicleForm.elements[k] || document.getElementById(k);
+      if(!el) return;
+      if(el.type==="checkbox") el.checked=!!v;
+      else el.value=v;
+    });
+  }catch(e){}
+})();
+
+vehicleForm.addEventListener("submit",(e)=>{
+  e.preventDefault();
+  if(!vehicleForm.reportValidity()) return;
+  const d=new FormData(vehicleForm);
+
+  let text="SAVANNAH RP — VEHICLE COSMETIC REQUEST\n";
+  text+="========================================\n\n";
+  text+=`DISCORD: ${d.get("vehicleDiscord")}\n`;
+  text+=`CHARACTER: ${d.get("vehicleCharacter")}\n\n`;
+  text+=`IN-GAME VEHICLE: ${d.get("vehicleModel")}\n`;
+  text+=`COSMETIC TYPE: ${d.get("vehicleCosmeticType")}\n`;
+  text+=`MAIN COLORS: ${d.get("vehicleColors")}\n`;
+  if(d.get("vehiclePlate")) text+=`VANITY PLATE: ${d.get("vehiclePlate")}\n`;
+  text+=`\nDESIGN DETAILS:\n${d.get("vehicleDetails")}\n\n`;
+  text+=`ARTWORK METHOD:\n${d.get("vehicleArtworkMethod")}\n\n`;
+  if(d.get("vehicleArtworkLink")) text+=`ARTWORK LINK:\n${d.get("vehicleArtworkLink")}\n\n`;
+  if(d.get("vehicleArtworkNotes")) text+=`ADDITIONAL NOTES:\n${d.get("vehicleArtworkNotes")}\n\n`;
+  text+="I CONFIRM:\n";
+  text+="- I own the submitted artwork or have permission to use it.\n";
+  text+="- I understand unauthorized real-world brands/copyrighted material may be rejected.\n";
+  text+="- I understand this purchase is visual-only and provides no gameplay advantage.\n";
+
+  generatedVehicleOrder.value=text;
+  vehicleOutput.hidden=false;
+  vehicleOutput.scrollIntoView({behavior:"smooth",block:"start"});
+});
+
+document.getElementById("copyVehicleOrder").addEventListener("click",async()=>{
+  const status=document.getElementById("vehicleCopyStatus");
+  try{
+    await navigator.clipboard.writeText(generatedVehicleOrder.value);
+    status.textContent="Order request copied.";
+  }catch(e){
+    generatedVehicleOrder.select();
+    document.execCommand("copy");
+    status.textContent="Order request copied.";
+  }
+});
+</script>
+</body>
+</html>
