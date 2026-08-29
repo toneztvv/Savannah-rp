@@ -215,3 +215,33 @@
 .chain-policy h2{font:800 clamp(42px,5.5vw,68px)/.95 'Barlow Condensed';margin:8px 0 18px}
 .chain-policy p:not(.eyebrow){color:#999;line-height:1.8}
 @media(max-width:650px){.chain-policy{padding:65px 5vw}}
+
+
+.footer-links{display:flex;justify-content:center;gap:18px;flex-wrap:wrap;margin-top:14px}
+.footer-links a{color:#9e8a6a;text-decoration:none;font-size:11px}
+.footer-links a:hover{color:#d1a65f}
+.support-page,.legal-page{min-height:100vh;padding-top:82px;background:#080a0c;color:#f4f1eb}
+.legal-hero{padding:95px 7vw 65px;text-align:center;background:radial-gradient(circle at 50% 0%,#23170b 0,#0a0c0e 58%);border-bottom:1px solid #3c3020}
+.legal-hero h1{font:800 clamp(58px,8vw,108px)/.9 'Barlow Condensed',Arial,sans-serif;margin:8px 0 18px}
+.legal-hero h1 span{color:#b88940}
+.legal-hero>p:not(.eyebrow){max-width:830px;margin:0 auto;color:#9d9d9d;line-height:1.8}
+.support-grid{padding:75px 7vw 35px;max-width:1300px;margin:auto;display:grid;grid-template-columns:repeat(3,1fr);gap:14px}
+.support-card{padding:28px;border:1px solid #392f22;background:linear-gradient(145deg,#111416,#0a0c0e)}
+.support-card>span{color:#886736;font:700 11px Inter;letter-spacing:2px}
+.support-card h3{font:700 29px 'Barlow Condensed';margin:17px 0 10px}
+.support-card p{color:#999;font-size:12px;line-height:1.8}
+.support-card b{display:block;color:#c89b54;font-size:11px;line-height:1.6}
+.faq-section{padding:55px 7vw 105px;max-width:1300px;margin:auto}
+.faq-list{display:grid;gap:10px}
+.faq-list details{border:1px solid #342c22;background:#0d1012}
+.faq-list summary{cursor:pointer;padding:20px 22px;color:#e0d5c4;font:700 23px 'Barlow Condensed'}
+.faq-list details p{padding:0 22px 22px;margin:0;color:#999;line-height:1.8;font-size:13px}
+.legal-content{max-width:1000px;margin:auto;padding:70px 7vw 110px}
+.legal-content article{border:1px solid #382f23;background:#0d1012;padding:34px}
+.legal-content h2{font:700 30px 'Barlow Condensed';color:#c99b54;margin:34px 0 10px}
+.legal-content h2:first-child{margin-top:0}
+.legal-content p{color:#a1a1a1;line-height:1.85;font-size:13px}
+.simple-legal-footer{padding:28px 5vw;background:#050607;border-top:1px solid #2d261c;display:flex;justify-content:center;gap:20px;flex-wrap:wrap}
+.simple-legal-footer a{color:#aa8c5f;text-decoration:none;font-size:11px}
+@media(max-width:850px){.support-grid{grid-template-columns:1fr}}
+@media(max-width:650px){.support-page,.legal-page{padding-top:72px}.legal-hero{padding:70px 5vw 50px}.support-grid,.faq-section,.legal-content{padding-left:5vw;padding-right:5vw}.legal-content article{padding:22px}}
