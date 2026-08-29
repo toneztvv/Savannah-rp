@@ -107,3 +107,37 @@ V17 UPDATE
 - Removed the assets folder.
 - favicon.svg and hero-reference.png now sit in the main website folder.
 - You can select and upload every website file from one folder.
+
+
+V18 UPDATE
+----------
+- Added team.html for Staff & Leadership.
+- Includes ownership/management, PD command, EMS command, real estate, businesses, mechanics and community management.
+- Linked from homepage and footer without adding another crowded top navigation tab.
+
+
+V19 UPDATE
+----------
+- Removed all staff/leadership roles from team.html.
+- Owner page now shows only the Savannah RP owner.
+- Updated homepage/footer wording from Staff & Leadership to Owner.
+
+
+V20 UPDATE
+----------
+- Added custom-chain.html.
+- Buyers can enter chain style, finish, pendant details, character info and artwork method.
+- Includes artwork ownership and copyright/trademark confirmations.
+- Generates a clean order request that can be copied into Discord.
+- Store CUSTOM CHAIN package now opens the custom order page.
+- Added four-step custom order flow to the Store page.
+
+
+V21 UPDATE
+----------
+- Added custom-clothing.html for original cosmetic clothing orders.
+- Supports shirts, jackets, pants, hats, masks, accessories, uniforms, gang/crew cosmetics and full outfits.
+- Includes artwork ownership and no-brand/no-copyright confirmations.
+- Generates a clean Discord order request.
+- Store CITY STYLE PACK now opens the clothing order page.
+- Added a Custom Cosmetic Orders hub for chains and clothing.

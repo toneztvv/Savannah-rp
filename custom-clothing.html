@@ -1,0 +1,260 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Savannah RP | Custom Clothing Order</title>
+  <meta name="description" content="Request custom cosmetic clothing for Savannah RP.">
+  <meta name="theme-color" content="#080a0c">
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@500;600;700;800&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css?v=21">
+</head>
+<body>
+<header class="nav">
+  <a class="logo" href="index.html">
+    <span>SAVANNAH <b>RP</b></span>
+    <small>REAL CITY. REAL PEOPLE. REAL CONSEQUENCES.</small>
+  </a>
+  <button id="menuBtn" class="menu-btn" aria-label="Toggle menu">☰</button>
+  <nav id="navLinks">
+    <a href="index.html">HOME</a>
+    <a href="index.html#city">SERVER</a>
+    <a href="index.html#features">FEATURES</a>
+    <a href="rules.html">RULES</a>
+    <a href="media.html">MEDIA</a>
+    <a class="active" href="store.html">STORE</a>
+    <a href="applications.html">APPLY</a>
+    <a href="updates.html">UPDATES</a>
+    <a href="support.html">SUPPORT</a>
+    <a href="join.html">DISCORD</a>
+  </nav>
+  <div class="status"><i></i> STATUS: <strong data-server-status>CHECKING</strong></div>
+</header>
+
+<main class="clothing-order-page">
+  <section class="chain-order-hero">
+    <p class="eyebrow">CUSTOM COSMETIC CLOTHING</p>
+    <h1>DESIGN YOUR <span>LOOK</span></h1>
+    <p>
+      Request original Savannah RP clothing and style cosmetics. Paid clothing is cosmetic-only
+      and cannot provide armor, stats, inventory bonuses, or competitive advantages.
+    </p>
+  </section>
+
+  <section class="chain-order-shell">
+    <div class="chain-order-info">
+      <p class="eyebrow">BEFORE YOU ORDER</p>
+      <h2>ORIGINAL DESIGNS ONLY.</h2>
+      <ul>
+        <li>You must own the submitted artwork or have permission to use it.</li>
+        <li>No unlicensed real-world brands, sports logos, designer marks, celebrities, copyrighted characters, or third-party artwork.</li>
+        <li>Cosmetics cannot provide armor, stats, speed, inventory, crafting, or combat benefits.</li>
+        <li>Savannah RP may reject designs that create copyright, trademark, platform, or quality concerns.</li>
+        <li>Pricing may vary based on complexity and number of clothing pieces.</li>
+      </ul>
+    </div>
+
+    <form id="clothingOrderForm" class="chain-order-form">
+      <div class="form-section form-grid-two">
+        <div>
+          <p class="form-number">01 — BUYER</p>
+          <label for="clothingDiscord">Discord username</label>
+          <input id="clothingDiscord" name="clothingDiscord" type="text" placeholder="@username" required>
+        </div>
+        <div>
+          <p class="form-number">&nbsp;</p>
+          <label for="clothingCharacter">Character name</label>
+          <input id="clothingCharacter" name="clothingCharacter" type="text" placeholder="First Last" required>
+        </div>
+      </div>
+
+      <div class="form-section">
+        <p class="form-number">02 — ITEM TYPE</p>
+
+        <label for="clothingType">What do you want made?</label>
+        <select id="clothingType" name="clothingType" required>
+          <option value="">Choose one</option>
+          <option>T-Shirt / Top</option>
+          <option>Hoodie / Jacket</option>
+          <option>Pants / Bottoms</option>
+          <option>Hat / Headwear</option>
+          <option>Mask / Face Cosmetic</option>
+          <option>Accessory</option>
+          <option>Business Uniform</option>
+          <option>Gang / Crew Cosmetic Set</option>
+          <option>Full Outfit</option>
+          <option>Other Cosmetic Clothing</option>
+        </select>
+
+        <label for="clothingGender">Character model / fit</label>
+        <select id="clothingGender" name="clothingGender" required>
+          <option value="">Choose one</option>
+          <option>Male character fit</option>
+          <option>Female character fit</option>
+          <option>Both / matching versions</option>
+        </select>
+
+        <label for="clothingColors">Main colors</label>
+        <input id="clothingColors" name="clothingColors" type="text" placeholder="Example: black, gold, white" required>
+
+        <label for="clothingDetails">Describe the design</label>
+        <textarea id="clothingDetails" name="clothingDetails" rows="5" placeholder="Placement, text, pattern, symbols, front/back details, overall look, etc." required></textarea>
+      </div>
+
+      <div class="form-section">
+        <p class="form-number">03 — ARTWORK</p>
+
+        <label for="clothingArtworkMethod">How will you provide the artwork?</label>
+        <select id="clothingArtworkMethod" name="clothingArtworkMethod" required>
+          <option value="">Choose one</option>
+          <option>I will upload/send my original artwork in the Discord ticket</option>
+          <option>I will provide a link to my original artwork</option>
+          <option>I need Savannah RP to create an original design from my description</option>
+        </select>
+
+        <label for="clothingArtworkLink">Artwork link (optional)</label>
+        <input id="clothingArtworkLink" name="clothingArtworkLink" type="url" placeholder="https://...">
+
+        <label for="clothingArtworkNotes">Additional notes</label>
+        <textarea id="clothingArtworkNotes" name="clothingArtworkNotes" rows="4" placeholder="Anything the designer needs to know."></textarea>
+      </div>
+
+      <div class="form-section">
+        <p class="form-number">04 — RIGHTS & POLICY</p>
+
+        <label class="check-row">
+          <input type="checkbox" id="clothingRights" required>
+          <span>I confirm I own the submitted artwork or have permission to use it.</span>
+        </label>
+
+        <label class="check-row">
+          <input type="checkbox" id="clothingNoBrands" required>
+          <span>I understand unlicensed copyrighted, trademarked, branded, celebrity, sports, or third-party material may be rejected.</span>
+        </label>
+
+        <label class="check-row">
+          <input type="checkbox" id="clothingCosmeticOnly" required>
+          <span>I understand this purchase is cosmetic-only and gives no gameplay, economy, armor, stat, or combat advantage.</span>
+        </label>
+      </div>
+
+      <div class="form-actions">
+        <button class="btn primary" type="submit">GENERATE ORDER REQUEST</button>
+        <button class="btn" id="saveClothingDraft" type="button">SAVE DRAFT</button>
+        <button class="btn" id="clearClothingDraft" type="button">CLEAR</button>
+      </div>
+    </form>
+
+    <section id="clothingOrderOutput" class="application-output" hidden>
+      <p class="eyebrow">CUSTOM CLOTHING REQUEST</p>
+      <h2>READY TO SUBMIT.</h2>
+      <p>Copy this request and paste it into the Savannah RP custom-order Discord ticket after purchase.</p>
+      <textarea id="generatedClothingOrder" rows="22" readonly></textarea>
+      <div class="form-actions">
+        <button class="btn primary" id="copyClothingOrder" type="button">COPY ORDER REQUEST</button>
+        <a class="btn" href="https://store.traprp.com" target="_blank" rel="noopener">OPEN TEBEX STORE</a>
+      </div>
+      <p id="clothingCopyStatus" class="copy-status"></p>
+    </section>
+  </section>
+</main>
+
+<footer>
+  <div class="logo footer-logo"><span>SAVANNAH <b>RP</b></span></div>
+  <p>© 2026 Savannah RP. All rights reserved.</p>
+  <p class="legal">Savannah RP is not approved, sponsored, or endorsed by Rockstar Games.</p>
+  <div class="footer-links">
+    <a href="guide.html">New Player Guide</a>
+    <a href="directory.html">City Directory</a>
+    <a href="team.html">Owner</a>
+    <a href="applications.html">Applications</a>
+    <a href="updates.html">Updates</a>
+    <a href="support.html">Support</a>
+    <a href="rules.html">Rules</a>
+    <a href="store.html">Store</a>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+<script>
+const clothingForm = document.getElementById("clothingOrderForm");
+const clothingOutput = document.getElementById("clothingOrderOutput");
+const generatedClothingOrder = document.getElementById("generatedClothingOrder");
+const clothingDraftKey = "savannahRPClothingOrderDraft";
+
+function getClothingData(){
+  const data={};
+  new FormData(clothingForm).forEach((v,k)=>data[k]=v);
+  data.clothingRights=document.getElementById("clothingRights").checked;
+  data.clothingNoBrands=document.getElementById("clothingNoBrands").checked;
+  data.clothingCosmeticOnly=document.getElementById("clothingCosmeticOnly").checked;
+  return data;
+}
+
+document.getElementById("saveClothingDraft").addEventListener("click",()=>{
+  localStorage.setItem(clothingDraftKey, JSON.stringify(getClothingData()));
+  alert("Custom clothing draft saved on this device.");
+});
+
+document.getElementById("clearClothingDraft").addEventListener("click",()=>{
+  localStorage.removeItem(clothingDraftKey);
+  clothingForm.reset();
+});
+
+(function restoreClothingDraft(){
+  const raw=localStorage.getItem(clothingDraftKey);
+  if(!raw) return;
+  try{
+    const data=JSON.parse(raw);
+    Object.entries(data).forEach(([k,v])=>{
+      const el=clothingForm.elements[k] || document.getElementById(k);
+      if(!el) return;
+      if(el.type==="checkbox") el.checked=!!v;
+      else el.value=v;
+    });
+  }catch(e){}
+})();
+
+clothingForm.addEventListener("submit",(e)=>{
+  e.preventDefault();
+  if(!clothingForm.reportValidity()) return;
+  const d=new FormData(clothingForm);
+
+  let text="SAVANNAH RP — CUSTOM CLOTHING REQUEST\n";
+  text+="======================================\n\n";
+  text+=`DISCORD: ${d.get("clothingDiscord")}\n`;
+  text+=`CHARACTER: ${d.get("clothingCharacter")}\n\n`;
+  text+=`ITEM TYPE: ${d.get("clothingType")}\n`;
+  text+=`CHARACTER FIT: ${d.get("clothingGender")}\n`;
+  text+=`MAIN COLORS: ${d.get("clothingColors")}\n\n`;
+  text+=`DESIGN DETAILS:\n${d.get("clothingDetails")}\n\n`;
+  text+=`ARTWORK METHOD:\n${d.get("clothingArtworkMethod")}\n\n`;
+  if(d.get("clothingArtworkLink")) text+=`ARTWORK LINK:\n${d.get("clothingArtworkLink")}\n\n`;
+  if(d.get("clothingArtworkNotes")) text+=`ADDITIONAL NOTES:\n${d.get("clothingArtworkNotes")}\n\n`;
+  text+="I CONFIRM:\n";
+  text+="- I own the submitted artwork or have permission to use it.\n";
+  text+="- I understand unauthorized copyrighted/trademarked/third-party material may be rejected.\n";
+  text+="- I understand this purchase is cosmetic-only and provides no gameplay advantage.\n";
+
+  generatedClothingOrder.value=text;
+  clothingOutput.hidden=false;
+  clothingOutput.scrollIntoView({behavior:"smooth",block:"start"});
+});
+
+document.getElementById("copyClothingOrder").addEventListener("click",async()=>{
+  const status=document.getElementById("clothingCopyStatus");
+  try{
+    await navigator.clipboard.writeText(generatedClothingOrder.value);
+    status.textContent="Order request copied.";
+  }catch(e){
+    generatedClothingOrder.select();
+    document.execCommand("copy");
+    status.textContent="Order request copied.";
+  }
+});
+</script>
+</body>
+</html>

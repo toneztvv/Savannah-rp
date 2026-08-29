@@ -412,3 +412,72 @@ a,button{-webkit-tap-highlight-color:transparent}
 @media(max-width:760px){
   .nav nav{overflow:visible;white-space:normal}
 }
+
+
+.team-page{padding-top:82px;background:#080a0c;min-height:100vh}
+.team-hero{padding:105px 7vw 80px;text-align:center;background:radial-gradient(circle at 50% 0%,#23170b 0,#0a0c0e 60%);border-bottom:1px solid #3b3022}
+.team-hero h1{font:800 clamp(60px,8vw,108px)/.9 'Barlow Condensed';margin:8px 0 18px}
+.team-hero h1 span{color:#b88940}
+.team-hero>p:not(.eyebrow){max-width:880px;margin:0 auto;color:#999;line-height:1.8}
+.team-section{padding:85px 7vw;max-width:1400px;margin:auto}
+.alt-team{max-width:none;background:#0d1012;border-block:1px solid #31291f}
+.team-heading{text-align:center;margin-bottom:38px}
+.team-heading h2,.team-standards h2{font:800 clamp(44px,6vw,72px)/.95 'Barlow Condensed';margin:8px 0}
+.team-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;max-width:1250px;margin:auto}
+.team-card{min-height:260px;padding:30px;border:1px solid #352d22;background:linear-gradient(145deg,#101315,#0a0c0e)}
+.featured-team{border-color:#8c6736;background:radial-gradient(circle at 30% 0%,rgba(172,119,48,.12),transparent 35%),linear-gradient(145deg,#101315,#0a0c0e)}
+.team-role{color:#c79a53;font:700 10px Inter;letter-spacing:1.7px}
+.team-card h3{font:700 31px 'Barlow Condensed';margin:18px 0 10px;color:#eee}
+.team-card p{color:#959595;font-size:12px;line-height:1.8}
+.team-standards{padding:80px 7vw;background:radial-gradient(circle at 15% 30%,rgba(170,118,48,.12),transparent 35%),#0b0e10;border-top:1px solid #3a3022;display:grid;grid-template-columns:1fr auto;gap:45px;align-items:center}
+.team-standards p:not(.eyebrow){max-width:820px;color:#999;line-height:1.8}
+@media(max-width:950px){.team-grid{grid-template-columns:1fr}.team-standards{grid-template-columns:1fr}}
+@media(max-width:650px){.team-page{padding-top:72px}.team-hero{padding:75px 5vw 60px}.team-section,.team-standards{padding-left:5vw;padding-right:5vw}.team-standards .btn{width:100%}}
+
+
+.owner-only-section{padding:95px 7vw 120px;max-width:900px;margin:auto}
+.owner-only-card{padding:48px;border:1px solid #8c6736;background:radial-gradient(circle at 30% 0%,rgba(172,119,48,.14),transparent 38%),linear-gradient(145deg,#101315,#0a0c0e);text-align:center}
+.owner-only-card h2{font:800 clamp(48px,7vw,82px)/.95 'Barlow Condensed';margin:18px 0 14px;color:#eee}
+.owner-only-card p{max-width:700px;margin:0 auto;color:#999;line-height:1.8}
+@media(max-width:650px){.owner-only-section{padding:70px 5vw 90px}.owner-only-card{padding:32px 22px}}
+
+
+.chain-order-page{padding-top:82px;background:#080a0c;min-height:100vh}
+.chain-order-hero{padding:105px 7vw 80px;text-align:center;background:radial-gradient(circle at 50% 0%,#23170b 0,#0a0c0e 60%);border-bottom:1px solid #3b3022}
+.chain-order-hero h1{font:800 clamp(60px,8vw,108px)/.9 'Barlow Condensed';margin:8px 0 18px}
+.chain-order-hero h1 span{color:#b88940}
+.chain-order-hero>p:not(.eyebrow){max-width:880px;margin:0 auto;color:#999;line-height:1.8}
+.chain-order-shell{max-width:1100px;margin:auto;padding:70px 7vw 110px}
+.chain-order-info{padding:30px;margin-bottom:18px;border:1px solid #8c6736;background:radial-gradient(circle at 20% 0%,rgba(172,119,48,.12),transparent 38%),#0d1012}
+.chain-order-info h2{font:800 clamp(42px,5.5vw,68px)/.95 'Barlow Condensed';margin:8px 0 16px}
+.chain-order-info ul{padding-left:20px;color:#999;line-height:1.9;font-size:13px}
+.chain-order-form{display:grid;gap:16px}
+.custom-order-flow{padding:85px 7vw;background:#0d1012;border-block:1px solid #342b20;text-align:center}
+.custom-order-flow h2{font:800 clamp(42px,5.5vw,68px)/.95 'Barlow Condensed';margin:8px 0 32px}
+.order-flow-grid{max-width:1200px;margin:auto;display:grid;grid-template-columns:repeat(4,1fr);gap:12px;text-align:left}
+.order-flow-grid>div{padding:24px;border:1px solid #392f23;background:#090b0d}
+.order-flow-grid span{display:block;color:#8d6a36;font:700 10px Inter;letter-spacing:2px}
+.order-flow-grid b{display:block;color:#d0a45d;font:700 26px 'Barlow Condensed';margin:12px 0 8px}
+.order-flow-grid p{color:#8f8f8f;font-size:12px;line-height:1.7}
+@media(max-width:900px){.order-flow-grid{grid-template-columns:repeat(2,1fr)}}
+@media(max-width:650px){
+  .chain-order-page{padding-top:72px}
+  .chain-order-hero{padding:75px 5vw 60px}
+  .chain-order-shell,.custom-order-flow{padding-left:5vw;padding-right:5vw}
+  .order-flow-grid{grid-template-columns:1fr}
+}
+
+
+.clothing-order-page{padding-top:82px;background:#080a0c;min-height:100vh}
+.custom-order-hub{padding:85px 7vw;background:#080a0c;border-top:1px solid #30281e}
+.custom-order-hub-grid{max-width:900px;margin:auto;display:grid;grid-template-columns:repeat(2,1fr);gap:14px}
+.custom-order-hub-grid a{padding:30px;border:1px solid #3a3023;background:linear-gradient(145deg,#101315,#0a0c0e);text-decoration:none}
+.custom-order-hub-grid a:hover{border-color:#8f6a36}
+.custom-order-hub-grid span{display:block;color:#886635;font:700 10px Inter;letter-spacing:2px}
+.custom-order-hub-grid b{display:block;color:#d4aa63;font:700 30px 'Barlow Condensed';margin:14px 0 6px}
+.custom-order-hub-grid small{color:#777;font-size:11px}
+@media(max-width:650px){
+  .clothing-order-page{padding-top:72px}
+  .custom-order-hub{padding-left:5vw;padding-right:5vw}
+  .custom-order-hub-grid{grid-template-columns:1fr}
+}
