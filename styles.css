@@ -105,3 +105,52 @@
 .store-note p:not(.eyebrow){max-width:760px;color:#999;line-height:1.8}
 @media(max-width:1050px){.store-card-grid{grid-template-columns:repeat(2,1fr)}.guardrail-grid{grid-template-columns:repeat(2,1fr)}}
 @media(max-width:700px){.store-page{padding-top:72px}.store-hero{padding:75px 5vw 60px}.store-categories,.store-guardrails{padding:65px 5vw}.store-card-grid,.guardrail-grid{grid-template-columns:1fr}.store-note{grid-template-columns:1fr;padding:65px 5vw 80px}.store-card{min-height:240px}}
+
+
+.join-page{padding-top:82px;background:#080a0c}
+.join-hero{padding:110px 7vw 95px;text-align:center;background:radial-gradient(circle at 50% 0%,#23170b 0,#0a0c0e 60%);border-bottom:1px solid #3e3222}
+.join-hero h1{font:800 clamp(64px,9vw,118px)/.9 'Barlow Condensed';margin:8px 0 18px}
+.join-hero h1 span{color:#b88940}
+.join-hero>p:not(.eyebrow){max-width:820px;margin:0 auto;color:#aaa;line-height:1.8}
+.join-actions{display:flex;justify-content:center;gap:14px;flex-wrap:wrap;margin-top:30px}
+.disabled-cta{opacity:.8}
+.join-steps{padding:90px 7vw}
+.join-section-head{text-align:center;margin-bottom:42px}
+.join-section-head h2{font:800 clamp(46px,6vw,76px)/.95 'Barlow Condensed';margin:8px 0}
+.join-step-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;max-width:1250px;margin:auto}
+.join-step-grid article{padding:30px;min-height:270px;border:1px solid #372e22;background:linear-gradient(145deg,#111416,#0a0c0e)}
+.join-step-grid article>span{color:#8c6935;font:700 12px Inter;letter-spacing:2px}
+.join-step-grid h3{font:700 31px 'Barlow Condensed';margin:20px 0 10px}
+.join-step-grid p{color:#999;line-height:1.8;font-size:13px}
+.join-step-grid a{color:#c79a53;text-decoration:none;font:700 11px Inter;letter-spacing:1px}
+.join-requirements{padding:80px 7vw;background:#0d1012;border-block:1px solid #30281e;display:grid;grid-template-columns:.65fr 1.35fr;gap:50px;align-items:center}
+.join-requirements h2,.join-experience h2,.join-status h2,.join-bottom h2{font:800 clamp(42px,5.5vw,70px)/.95 'Barlow Condensed';margin:8px 0}
+.requirements-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:12px}
+.requirements-grid>div{padding:22px;border:1px solid #342c22;background:#090b0d}
+.requirements-grid b{display:block;color:#ca9d57;font:700 24px 'Barlow Condensed';margin-bottom:7px}
+.requirements-grid span{color:#888;font-size:12px}
+.join-experience{padding:95px 7vw;display:grid;grid-template-columns:1fr 1fr;gap:60px;align-items:center}
+.join-experience-copy>p:last-child{color:#999;line-height:1.85}
+.join-path-list{display:grid;grid-template-columns:repeat(2,1fr);gap:10px}
+.join-path-list span{padding:18px;border:1px solid #382f24;background:#0d1012;color:#d2c8b7;font:700 22px 'Barlow Condensed'}
+.join-status{padding:70px 7vw;background:radial-gradient(circle at 85% 20%,rgba(151,104,39,.13),transparent 35%),#0b0e10;border-block:1px solid #3b3022;display:grid;grid-template-columns:1fr auto;gap:40px;align-items:center}
+.join-status>div>p:last-child{max-width:690px;color:#929292;line-height:1.75}
+.join-status-grid{display:flex;gap:10px}
+.join-status-grid>div{min-width:145px;padding:18px;border:1px solid #372f25;background:#090b0d}
+.join-status-grid span{display:block;color:#777;font:600 9px Inter;letter-spacing:1.5px;margin-bottom:7px}
+.join-status-grid strong{font:700 18px 'Barlow Condensed';color:#d8cbb8}
+.join-status-grid i{display:inline-block;width:8px;height:8px;border-radius:50%;background:#39d36f;margin-right:7px;box-shadow:0 0 8px #39d36f}
+.join-bottom{padding:100px 7vw 120px;text-align:center;background:radial-gradient(circle at 50% 100%,#21160b,#080a0c 58%)}
+.join-bottom>p:not(.eyebrow){color:#999}
+@media(max-width:950px){
+  .join-step-grid{grid-template-columns:1fr}
+  .join-requirements,.join-experience,.join-status{grid-template-columns:1fr}
+  .join-status-grid{flex-wrap:wrap}
+  .join-status-grid>div{flex:1 1 130px}
+}
+@media(max-width:650px){
+  .join-page{padding-top:72px}
+  .join-hero{padding:75px 5vw 60px}
+  .join-steps,.join-requirements,.join-experience,.join-status,.join-bottom{padding-left:5vw;padding-right:5vw}
+  .requirements-grid,.join-path-list{grid-template-columns:1fr}
+}
