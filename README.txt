@@ -99,3 +99,11 @@ Launch-readiness polish:
 - Added Back-to-Top button.
 - Added subtle scroll reveal animations with reduced-motion accessibility support.
 - Improved mobile nav overflow behavior.
+
+
+V17 UPDATE
+----------
+- Flattened the website for iPhone/GitHub uploads.
+- Removed the assets folder.
+- favicon.svg and hero-reference.png now sit in the main website folder.
+- You can select and upload every website file from one folder.
