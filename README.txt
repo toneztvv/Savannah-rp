@@ -177,3 +177,12 @@ V25 UPDATE
 - Removed every old store.traprp.com link from the Savannah RP website.
 - Store purchase links now display STORE COMING SOON and cannot redirect visitors.
 - Once the official Savannah RP Tebex URL is created, replace the Coming Soon destinations with that store.
+
+
+V26 UPDATE
+----------
+- Added tickets.html: Savannah RP Ticket Center / Support Guide.
+- Covers Custom Chain/Purchase Verification, Store Delivery, Bug Reports, Player Reports, Appeals and General Support.
+- Custom Chain tickets require the Tebex invoice/receipt before work begins.
+- Added payment-safety warning: never request passwords, full card numbers, CVV, or bank logins.
+- Linked Ticket Center from Support, Custom Chain verification, and site footers.
