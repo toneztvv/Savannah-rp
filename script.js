@@ -56,3 +56,32 @@ async function refreshSavannahStatus(){
 
 refreshSavannahStatus();
 setInterval(refreshSavannahStatus, 60000);
+
+
+// Savannah RP site polish
+const backToTop = document.createElement("button");
+backToTop.className = "back-to-top";
+backToTop.setAttribute("aria-label","Back to top");
+backToTop.textContent = "↑";
+document.body.appendChild(backToTop);
+
+window.addEventListener("scroll",()=>{
+  backToTop.classList.toggle("show", window.scrollY > 500);
+});
+backToTop.addEventListener("click",()=>window.scrollTo({top:0,behavior:"smooth"}));
+
+// Respect reduced-motion preferences while still allowing subtle reveal effects.
+if(!window.matchMedia("(prefers-reduced-motion: reduce)").matches){
+  const observer = new IntersectionObserver(entries=>{
+    entries.forEach(entry=>{
+      if(entry.isIntersecting){
+        entry.target.classList.add("reveal-visible");
+        observer.unobserve(entry.target);
+      }
+    });
+  },{threshold:0.08});
+  document.querySelectorAll("section, article").forEach(el=>{
+    el.classList.add("reveal");
+    observer.observe(el);
+  });
+}

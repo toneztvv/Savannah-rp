@@ -85,3 +85,17 @@ V15 UPDATE
 - Added guide.html: New Player / Getting Started guide.
 - Covers character creation, rules, jobs, housing, legal/illegal paths, social RP and basic player tips.
 - Linked from the homepage without adding another top navigation tab.
+
+
+V16 UPDATE
+----------
+Launch-readiness polish:
+- Added favicon / app icon.
+- Added 404 page.
+- Added robots.txt and sitemap.xml.
+- Added site.webmanifest.
+- Added SEO/social metadata to main pages.
+- Added consistent footer navigation.
+- Added Back-to-Top button.
+- Added subtle scroll reveal animations with reduced-motion accessibility support.
+- Improved mobile nav overflow behavior.
