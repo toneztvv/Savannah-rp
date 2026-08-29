@@ -208,3 +208,10 @@
 .package-disclaimer b{color:#c89b54}
 @media(max-width:1100px){.package-grid{grid-template-columns:repeat(2,1fr)}}
 @media(max-width:650px){.package-shop{padding:70px 5vw}.package-grid{grid-template-columns:1fr}.package-card{min-height:0}}
+
+
+.chain-policy{padding:80px 7vw;background:radial-gradient(circle at 15% 20%,rgba(168,116,48,.11),transparent 38%),#0b0e10;border-block:1px solid #3a3022}
+.chain-policy>div{max-width:950px;margin:auto}
+.chain-policy h2{font:800 clamp(42px,5.5vw,68px)/.95 'Barlow Condensed';margin:8px 0 18px}
+.chain-policy p:not(.eyebrow){color:#999;line-height:1.8}
+@media(max-width:650px){.chain-policy{padding:65px 5vw}}
