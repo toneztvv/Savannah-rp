@@ -78,3 +78,10 @@ V14 UPDATE
 - Includes filters for public services, businesses, housing, nightlife and underground.
 - Added City Directory link from the homepage and footer areas without adding another top navigation tab.
 - Ready for real business names, owners, hours, locations and screenshots later.
+
+
+V15 UPDATE
+----------
+- Added guide.html: New Player / Getting Started guide.
+- Covers character creation, rules, jobs, housing, legal/illegal paths, social RP and basic player tips.
+- Linked from the homepage without adding another top navigation tab.
