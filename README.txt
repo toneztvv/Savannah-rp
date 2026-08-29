@@ -70,3 +70,11 @@ V13 UPDATE
 - Removed duplicate APPLY tabs and inconsistent page-only tabs.
 - APPLY now appears exactly once on all main pages.
 - Added updates.html for server announcements, patch notes, events, MLOs, jobs and maintenance.
+
+
+V14 UPDATE
+----------
+- Added directory.html: City Directory / Departments & Businesses.
+- Includes filters for public services, businesses, housing, nightlife and underground.
+- Added City Directory link from the homepage and footer areas without adding another top navigation tab.
+- Ready for real business names, owners, hours, locations and screenshots later.
