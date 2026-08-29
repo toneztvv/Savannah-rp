@@ -1,1 +1,58 @@
-const menuBtn=document.getElementById('menuBtn');const nav=document.getElementById('navLinks');menuBtn?.addEventListener('click',()=>nav.classList.toggle('open'));document.querySelectorAll('#navLinks a').forEach(a=>a.addEventListener('click',()=>nav.classList.remove('open')));
+const menuBtn=document.getElementById('menuBtn');
+const nav=document.getElementById('navLinks');
+menuBtn?.addEventListener('click',()=>nav.classList.toggle('open'));
+document.querySelectorAll('#navLinks a').forEach(a=>a.addEventListener('click',()=>nav.classList.remove('open')));
+
+/*
+  SAVANNAH RP LIVE STATUS
+  -----------------------
+  Put the public Cfx.re server join code / server ID below.
+  Example format only: abc123
+  Do NOT paste your license key here.
+*/
+const SAVANNAH_CFX_SERVER_ID = "";
+
+function setServerUI(status, playersText, isOnline){
+  document.querySelectorAll('[data-server-status]').forEach(el=>{
+    el.textContent=status;
+  });
+  document.querySelectorAll('[data-player-count]').forEach(el=>{
+    el.textContent=playersText;
+  });
+
+  document.querySelectorAll('.status i, .status-box i, .join-status-grid i').forEach(dot=>{
+    dot.classList.toggle('server-offline-dot', !isOnline);
+  });
+}
+
+async function refreshSavannahStatus(){
+  if(!SAVANNAH_CFX_SERVER_ID){
+    setServerUI("CONFIG NEEDED", "— / —", false);
+    return;
+  }
+
+  try{
+    const endpoint=`https://servers-frontend.fivem.net/api/servers/single/${encodeURIComponent(SAVANNAH_CFX_SERVER_ID)}`;
+    const response=await fetch(endpoint,{cache:"no-store"});
+    if(!response.ok) throw new Error("Server lookup failed");
+
+    const payload=await response.json();
+    const data=payload?.Data || payload?.data || payload;
+    const clients=Number(data?.clients ?? data?.Clients ?? 0);
+    const maxClients=Number(data?.svMaxclients ?? data?.sv_maxclients ?? data?.MaxClients ?? 0);
+
+    if(!data) throw new Error("No server data");
+
+    setServerUI(
+      "ONLINE",
+      maxClients ? `${clients} / ${maxClients}` : `${clients} ONLINE`,
+      true
+    );
+  }catch(err){
+    console.warn("Savannah RP status unavailable:",err);
+    setServerUI("OFFLINE", "— / —", false);
+  }
+}
+
+refreshSavannahStatus();
+setInterval(refreshSavannahStatus, 60000);

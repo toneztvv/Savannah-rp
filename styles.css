@@ -184,3 +184,7 @@
   .shot-slot.large{grid-column:span 1}
   .shot-placeholder,.shot-slot.large .shot-placeholder{min-height:220px}
 }
+
+
+.server-offline-dot{background:#777!important;box-shadow:none!important}
+.status strong[data-server-status]{min-width:72px;display:inline-block}
