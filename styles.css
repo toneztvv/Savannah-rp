@@ -46,3 +46,31 @@
   .placeholder-slots{grid-template-columns:1fr}
   .placeholder-slots>div{min-height:95px}
 }
+
+
+.rules-page{padding-top:82px;background:#080a0c}
+.rules-hero{padding:95px 7vw 65px;text-align:center;background:radial-gradient(circle at 50% 0%,#21170c 0,#0a0c0e 55%);border-bottom:1px solid #3d3121}
+.rules-hero h1{margin:10px 0 18px;font:800 clamp(58px,9vw,118px)/.9 'Barlow Condensed';letter-spacing:-1px}
+.rules-hero>p:not(.eyebrow){max-width:850px;margin:0 auto;color:#aaa;line-height:1.8}
+.rules-warning{max-width:1000px;margin:30px auto 0;padding:18px 22px;border:1px solid #8e6530;background:rgba(154,99,35,.09);color:#d9c29d;font-size:13px;line-height:1.7}
+.rules-warning strong{color:#e4ad58}
+.rules-layout{display:grid;grid-template-columns:260px 1fr;gap:45px;padding:55px 7vw 110px;max-width:1500px;margin:auto}
+.rules-nav{position:sticky;top:110px;align-self:start;border:1px solid #342c22;background:#0d0f11;padding:22px}
+.rules-nav h3{font:700 22px 'Barlow Condensed';color:#c79b54;margin:0 0 15px}
+.rules-nav a{display:block;color:#989898;text-decoration:none;padding:10px 0;border-bottom:1px solid #232323;font-size:12px}
+.rules-nav a:hover{color:#d1a65f}
+.rules-content{min-width:0}
+.rule-section{padding:0 0 55px;margin-bottom:50px;border-bottom:1px solid #29241d;scroll-margin-top:110px}
+.rule-kicker{color:#7c5d31;font:700 12px Inter;letter-spacing:2px}
+.rule-section h2{margin:8px 0 25px;font:800 clamp(36px,5vw,58px)/1 'Barlow Condensed'}
+.rule-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:12px}
+.rule-grid article,.rule-list p{border:1px solid #30291f;background:linear-gradient(145deg,#0f1214,#0b0d0e);padding:22px;margin:0}
+.rule-grid h3{margin:0 0 8px;color:#c89b54;font:700 24px 'Barlow Condensed'}
+.rule-grid p,.rule-list p{color:#a4a4a4;line-height:1.75;font-size:13px}
+.rule-list{display:grid;gap:10px}
+.rule-list b{color:#d2b27b}
+.rules-footer-card{text-align:center;padding:55px 35px;border:1px solid #493a25;background:radial-gradient(circle at 50% 100%,#21170c,#0b0e10 62%)}
+.rules-footer-card h2{font:800 clamp(40px,6vw,68px)/.95 'Barlow Condensed';margin:8px 0 15px}
+.rules-footer-card>p:not(.eyebrow){max-width:800px;margin:0 auto 28px;color:#999;line-height:1.8}
+@media(max-width:900px){.rules-layout{grid-template-columns:1fr}.rules-nav{position:relative;top:auto;display:grid;grid-template-columns:repeat(2,1fr);gap:0 18px}.rules-nav h3{grid-column:1/-1}.rule-grid{grid-template-columns:1fr}}
+@media(max-width:600px){.rules-page{padding-top:72px}.rules-hero{padding:70px 5vw 45px}.rules-layout{padding:35px 5vw 80px}.rules-nav{grid-template-columns:1fr}.rules-warning{font-size:12px}.rule-grid article,.rule-list p{padding:18px}}
