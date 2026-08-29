@@ -154,3 +154,33 @@
   .join-steps,.join-requirements,.join-experience,.join-status,.join-bottom{padding-left:5vw;padding-right:5vw}
   .requirements-grid,.join-path-list{grid-template-columns:1fr}
 }
+
+
+.media-page{padding-top:82px;background:#080a0c}
+.media-hero{padding:105px 7vw 80px;text-align:center;background:radial-gradient(circle at 50% 0%,#23170b 0,#0a0c0e 60%);border-bottom:1px solid #3c3020}
+.media-hero h1{font:800 clamp(64px,9vw,116px)/.9 'Barlow Condensed';margin:8px 0 18px}
+.media-hero h1 span{color:#b88940}
+.media-hero>p:not(.eyebrow){max-width:900px;margin:0 auto;color:#aaa;line-height:1.8}
+.media-gallery{padding:90px 7vw 105px}
+.media-head{text-align:center;max-width:900px;margin:0 auto 45px}
+.media-head h2,.media-note h2{font:800 clamp(46px,6vw,76px)/.95 'Barlow Condensed';margin:8px 0 14px}
+.media-head>p:not(.eyebrow),.media-note>p:not(.eyebrow){color:#999;line-height:1.8}
+.gallery-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:14px;max-width:1300px;margin:auto}
+.shot-slot{border:1px solid #352d22;background:#0b0d0f;overflow:hidden}
+.shot-slot.large{grid-column:span 2}
+.shot-placeholder{min-height:300px;display:grid;place-items:center;background:linear-gradient(135deg,#12161a,#0a0c0e);color:#6f604d;font:700 28px 'Barlow Condensed';letter-spacing:2px;border-bottom:1px solid #2f281e}
+.shot-slot.large .shot-placeholder{min-height:420px}
+.shot-copy{padding:22px 24px}
+.shot-copy span{color:#806036;font:700 10px Inter;letter-spacing:2px}
+.shot-copy h3{color:#d6b06d;font:700 28px 'Barlow Condensed';margin:8px 0 6px}
+.shot-copy p{color:#8f8f8f;font-size:12px;line-height:1.7;margin:0}
+.media-note{text-align:center;padding:85px 7vw 110px;background:radial-gradient(circle at 50% 100%,#21160b,#080a0c 58%);border-top:1px solid #31291f}
+.media-note>p:not(.eyebrow){max-width:800px;margin:0 auto}
+@media(max-width:700px){
+  .media-page{padding-top:72px}
+  .media-hero{padding:75px 5vw 60px}
+  .media-gallery,.media-note{padding-left:5vw;padding-right:5vw}
+  .gallery-grid{grid-template-columns:1fr}
+  .shot-slot.large{grid-column:span 1}
+  .shot-placeholder,.shot-slot.large .shot-placeholder{min-height:220px}
+}
