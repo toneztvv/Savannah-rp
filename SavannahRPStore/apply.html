@@ -1,0 +1,98 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Savannah RP | Apply</title>
+  <meta name="description" content="Apply for a role in Savannah RP — PD, EMS, mechanic, business owner, gang/organization, tattoo artist, or staff.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@600;700;800&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css?v=1">
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <link rel="manifest" href="site.webmanifest">
+  <meta name="theme-color" content="#0a0b0d">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Savannah RP">
+  <meta property="og:title" content="Savannah RP | Apply">
+</head>
+<body>
+
+<header class="nav">
+  <a class="brand" href="index.html"><span>SAVANNAH <b>RP</b></span><small>Your City. Your Story.</small></a>
+  <button id="menuBtn" class="menu-btn" aria-label="Menu">&#9776;</button>
+  <nav id="navLinks" class="nav-links">
+    <a href="index.html">Home</a>
+    <a href="rules.html">Rules</a>
+    <a class="active" href="apply.html">Apply</a>
+    <a href="guide.html">New Players</a>
+    <a href="support.html">Support</a>
+    <a href="store.html">Store</a>
+    <a class="cta" href="https://discord.gg/fkH9j5WmJD" target="_blank" rel="noopener">Discord</a>
+  </nav>
+  <div class="nav-status"><i></i> <strong data-server-status>COMING SOON</strong></div>
+</header>
+
+<section class="page-hero">
+  <div class="wrap">
+    <p class="eyebrow">Roles &amp; Whitelists</p>
+    <h1>APPLY TO <span>SAVANNAH</span></h1>
+    <p>Fill this out, copy it, and paste it into the matching application ticket in our Discord. Most roles are open to anyone with the time to commit &mdash; character and staff decide the rest.</p>
+  </div>
+</section>
+
+<section class="section">
+  <div class="wrap">
+    <div class="grid g3" style="margin-bottom:30px">
+      <div class="card"><span class="kicker">Emergency</span><h3>PD &amp; EMS / Fire</h3><p>Structured departments with ranks, training and real responsibility. Prior LEO/medical RP helps but isn't required.</p></div>
+      <div class="card"><span class="kicker">Careers</span><h3>Mechanic &amp; Business</h3><p>Work a shop, or pitch and run your own player business or MLO. Businesses are judged on the RP they create for others.</p></div>
+      <div class="card"><span class="kicker">Street &amp; Style</span><h3>Gangs &amp; Tattoo Artists</h3><p>Register a crew with a grounded backstory, or set up as a tattoo artist working from a shop or freelance.</p></div>
+    </div>
+
+    <div class="split">
+      <div>
+        <div class="form-field">
+          <label>Which role are you applying for?</label>
+          <select id="appRole">
+            <option>Police Department</option>
+            <option>EMS / Fire</option>
+            <option>Mechanic</option>
+            <option>Business Owner</option>
+            <option>Gang / Organization</option>
+            <option>Tattoo Artist</option>
+            <option>Staff</option>
+          </select>
+        </div>
+        <div id="appFields"></div>
+      </div>
+      <div>
+        <label style="display:block;font:700 12px/1 Inter;letter-spacing:1.5px;text-transform:uppercase;color:var(--gold);margin-bottom:8px">Your application</label>
+        <div id="appOut" class="form-out"></div>
+        <button id="appCopy" class="btn primary" style="margin-top:14px;width:100%;justify-content:center">Copy Application</button>
+        <a class="btn ghost" style="margin-top:10px;width:100%;justify-content:center" href="https://discord.gg/fkH9j5WmJD" target="_blank" rel="noopener">Open Discord &amp; Paste It</a>
+        <p class="muted" style="font-size:13px;margin-top:12px">Nothing is submitted from this page &mdash; it just builds clean text for your Discord ticket. Save it somewhere until we connect a submission form.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer class="foot">
+  <a class="brand" href="index.html"><span>SAVANNAH <b>RP</b></span></a>
+  <p>&copy; 2026 Savannah RP. All rights reserved.</p>
+  <p class="disc">Savannah RP is an independent roleplay community and is not approved, sponsored, or endorsed by Rockstar Games. All third-party names and marks belong to their respective owners.</p>
+  <div class="foot-links">
+    <a href="index.html">Home</a>
+    <a href="rules.html">Rules</a>
+    <a href="apply.html">Apply</a>
+    <a href="guide.html">New Players</a>
+    <a href="support.html">Support</a>
+    <a href="store.html">Store</a>
+    <a href="https://discord.gg/fkH9j5WmJD" target="_blank" rel="noopener">Discord</a>
+    <a href="terms.html">Terms</a>
+    <a href="refunds.html">Refunds</a>
+    <a href="privacy.html">Privacy</a>
+  </div>
+</footer>
+<script src="script.js"></script>
+</body>
+</html>
