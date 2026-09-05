@@ -85,3 +85,17 @@ if(!window.matchMedia("(prefers-reduced-motion: reduce)").matches){
     observer.observe(el);
   });
 }
+
+
+// City directory filters
+document.querySelectorAll('.directory-filter-btn').forEach(btn=>{
+  btn.addEventListener('click',()=>{
+    document.querySelectorAll('.directory-filter-btn').forEach(b=>b.classList.remove('active'));
+    btn.classList.add('active');
+    const filter=btn.dataset.filter;
+    document.querySelectorAll('.directory-card').forEach(card=>{
+      const show=filter==='all' || card.dataset.category===filter;
+      card.style.display=show?'':'none';
+    });
+  });
+});

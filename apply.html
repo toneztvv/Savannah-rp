@@ -3,16 +3,16 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Savannah RP | Application Form</title>
-  <meta name="description" content="Complete a Savannah RP application for PD, EMS, mechanics, business ownership, gangs, staff and more.">
+  <title>Savannah RP | Apply</title>
+  <meta name="description" content="Apply for PD, EMS, mechanic, business, gang, staff and other Savannah RP roles.">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@500;600;700;800&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="styles.css?v=26">
+  <link rel="stylesheet" href="styles.css?v=27">
   <link rel="icon" href="favicon.svg" type="image/svg+xml">
   <meta name="theme-color" content="#080a0c">
-  <meta property="og:title" content="Savannah RP | Application Form">
-  <meta property="og:description" content="Complete a Savannah RP application for PD, EMS, mechanics, business ownership, gangs, staff and more.">
+  <meta property="og:title" content="Savannah RP | Apply">
+  <meta property="og:description" content="Apply for PD, EMS, mechanic, business, gang, staff and other Savannah RP roles.">
   <meta property="og:type" content="website">
   <meta property="og:site_name" content="Savannah RP">
   <link rel="manifest" href="site.webmanifest">
@@ -26,33 +26,42 @@
   <button id="menuBtn" class="menu-btn" aria-label="Toggle menu">☰</button>
   <nav id="navLinks">
     <a href="index.html">HOME</a>
-    <a href="index.html#city">SERVER</a>
-    <a href="index.html#features">FEATURES</a>
-    <a href="rules.html">RULES</a>
-    <a href="media.html">MEDIA</a>
+    <a href="play.html">PLAY</a>
+    <a href="city.html">CITY</a>
+    <a class="active" href="apply.html">APPLY</a>
     <a href="store.html">STORE</a>
-    <a class="active" href="applications.html">APPLY</a>
-    <a href="updates.html">UPDATES</a>
-    <a href="support.html">SUPPORT</a>
-    <a href="join.html">DISCORD</a>
+    <a href="help.html">HELP</a>
   </nav>
   <div class="status"><i></i> STATUS: <strong data-server-status>CHECKING</strong></div>
 </header>
 
-<main class="apply-page">
-  <section class="apply-hero">
-    <p class="eyebrow">SAVANNAH RP RECRUITMENT</p>
-    <h1>START YOUR <span>APPLICATION</span></h1>
-    <p>Fill this out carefully. When finished, Savannah RP will generate a formatted application you can copy and submit through the official Discord application channel.</p>
+<main class="applications-page">
+  <section class="applications-hero">
+    <p class="eyebrow">APPLICATIONS</p>
+    <h1>APPLY TO <span>BUILD THE CITY</span></h1>
+    <p>Pick a role, then fill one form. Everything for applications lives here.</p>
   </section>
 
-  <section class="apply-shell">
-    <form id="savannahApplication" class="apply-form">
-      <div class="form-section">
-        <p class="form-number">01 — APPLICATION TYPE</p>
-        <label for="applicationType">What are you applying for?</label>
+  <section class="applications-grid">
+    <article class="application-card"><span>01</span><h3>POLICE</h3><p>Protect the city and run serious LEO scenes.</p><a class="btn application-btn" href="#form" data-type="pd">START</a></article>
+    <article class="application-card"><span>02</span><h3>EMS / FIRE</h3><p>Emergency medical and rescue roleplay.</p><a class="btn application-btn" href="#form" data-type="ems">START</a></article>
+    <article class="application-card"><span>03</span><h3>MECHANIC</h3><p>Shop RP, repairs and customization.</p><a class="btn application-btn" href="#form" data-type="mechanic">START</a></article>
+    <article class="application-card"><span>04</span><h3>BUSINESS</h3><p>Open a business that creates jobs and RP.</p><a class="btn application-btn" href="#form" data-type="business">START</a></article>
+    <article class="application-card"><span>05</span><h3>REAL ESTATE</h3><p>Help players find homes and property.</p><a class="btn application-btn" href="#form" data-type="realestate">START</a></article>
+    <article class="application-card"><span>06</span><h3>GANG / CREW</h3><p>Register a group with story and structure.</p><a class="btn application-btn" href="#form" data-type="gang">START</a></article>
+    <article class="application-card"><span>07</span><h3>TATTOO ARTIST</h3><p>Shop style and character cosmetics RP.</p><a class="btn application-btn" href="#form" data-type="tattoo">START</a></article>
+    <article class="application-card"><span>08</span><h3>STAFF</h3><p>Help moderate and support the community.</p><a class="btn application-btn" href="#form" data-type="staff">START</a></article>
+  </section>
+
+  <section id="form" class="apply-form-wrap" style="max-width:920px;margin:0 auto;padding:40px 5vw 80px">
+    <p class="eyebrow">ONE FORM</p>
+    <h2>APPLICATION FORM</h2>
+    <p>Saves a draft on this device and builds a Discord-ready copy.</p>
+
+    <form id="appForm" class="apply-form">
+      <label>Application type
         <select id="applicationType" name="applicationType" required>
-          <option value="">Choose one</option>
+          <option value="">Select…</option>
           <option value="Police Department">Police Department</option>
           <option value="EMS / Fire">EMS / Fire</option>
           <option value="Mechanic">Mechanic</option>
@@ -62,262 +71,111 @@
           <option value="Tattoo Artist">Tattoo Artist</option>
           <option value="Staff Team">Staff Team</option>
         </select>
+      </label>
+      <div class="form-grid-two">
+        <label>Discord <input name="discordName" required placeholder="@username"></label>
+        <label>Age <input name="age" type="number" min="13" max="99" required></label>
+        <label>Character name <input name="characterName" required placeholder="First Last"></label>
+        <label>Timezone <input name="timezone" required placeholder="MST / EST"></label>
       </div>
-
-      <div class="form-section form-grid-two">
-        <div>
-          <p class="form-number">02 — PLAYER</p>
-          <label for="discordName">Discord username</label>
-          <input id="discordName" name="discordName" type="text" placeholder="@username" required>
-        </div>
-        <div>
-          <p class="form-number">&nbsp;</p>
-          <label for="age">Age</label>
-          <input id="age" name="age" type="number" min="13" max="99" placeholder="Age" required>
-        </div>
-        <div>
-          <label for="characterName">Character name</label>
-          <input id="characterName" name="characterName" type="text" placeholder="First Last" required>
-        </div>
-        <div>
-          <label for="timezone">Timezone</label>
-          <input id="timezone" name="timezone" type="text" placeholder="Example: MST / EST" required>
-        </div>
-      </div>
-
-      <div class="form-section">
-        <p class="form-number">03 — EXPERIENCE</p>
-        <label for="experience">Tell us about your previous RP experience.</label>
-        <textarea id="experience" name="experience" rows="5" placeholder="Servers, roles, departments, businesses, leadership, etc." required></textarea>
-
-        <label for="whyApply">Why do you want this role in Savannah RP?</label>
-        <textarea id="whyApply" name="whyApply" rows="5" placeholder="Explain what you want to bring to the city." required></textarea>
-      </div>
-
-      <div id="dynamicQuestions" class="form-section">
-        <p class="form-number">04 — ROLE QUESTIONS</p>
-        <div id="dynamicQuestionFields">
-          <p class="dynamic-hint">Choose an application type above to load the role-specific questions.</p>
-        </div>
-      </div>
-
-      <div class="form-section">
-        <p class="form-number">05 — AVAILABILITY & AGREEMENT</p>
-        <label for="availability">How often can you realistically be active?</label>
-        <textarea id="availability" name="availability" rows="3" placeholder="Days/times and approximate weekly availability." required></textarea>
-
-        <label class="check-row">
-          <input type="checkbox" id="rulesAgree" required>
-          <span>I have read the Savannah RP rules and understand that approval can be revoked for rule violations or inactivity.</span>
-        </label>
-
-        <label class="check-row">
-          <input type="checkbox" id="truthAgree" required>
-          <span>I confirm the information in this application is truthful.</span>
-        </label>
-      </div>
-
+      <label>RP experience <textarea name="experience" rows="4" required></textarea></label>
+      <label>Why this role? <textarea name="whyApply" rows="4" required></textarea></label>
+      <div id="dynamicQuestionFields"><p class="dynamic-hint">Choose a type to load role questions.</p></div>
+      <label>Availability <textarea name="availability" rows="3" required></textarea></label>
+      <label class="check-row"><input type="checkbox" required> I have read the <a href="rules.html">rules</a>.</label>
+      <label class="check-row"><input type="checkbox" required> This information is truthful.</label>
       <div class="form-actions">
-        <button type="submit" class="btn primary">GENERATE APPLICATION</button>
-        <button type="button" class="btn" id="saveDraft">SAVE DRAFT</button>
-        <button type="button" class="btn" id="clearDraft">CLEAR</button>
+        <button class="btn primary" type="submit">GENERATE FOR DISCORD</button>
+        <button class="btn" type="button" id="saveDraft">SAVE DRAFT</button>
       </div>
     </form>
-
     <section id="applicationOutput" class="application-output" hidden>
-      <p class="eyebrow">APPLICATION READY</p>
-      <h2>COPY & SUBMIT</h2>
-      <p>Copy this and paste it into the official Savannah RP application channel/ticket.</p>
-      <textarea id="generatedApplication" rows="24" readonly></textarea>
-      <div class="form-actions">
-        <button class="btn primary" id="copyApplication" type="button">COPY APPLICATION</button>
-        <a class="btn" href="applications.html">BACK TO APPLICATIONS</a>
-      </div>
+      <h2>COPY & PASTE INTO DISCORD</h2>
+      <textarea id="generatedApplication" rows="18" readonly></textarea>
+      <button class="btn primary" type="button" id="copyApplication">COPY</button>
       <p id="copyStatus" class="copy-status"></p>
     </section>
   </section>
 </main>
+<script>
+const roleQuestions={
+"Police Department":[["pdScenario","Hostile traffic stop — how do you handle it?"],["pdWhy","What does good police RP mean to you?"]],
+"EMS / Fire":[["emsScenario","Difficult injured patient — how do you handle it?"],["emsWhy","What makes good medical RP?"]],
+"Mechanic":[["mechWhy","Why mechanic?"],["mechCustomer","How do you create customer RP, not silent repairs?"]],
+"Business Owner":[["businessName","Business name & type"],["businessConcept","How does it create RP for others?"]],
+"Real Estate":[["reWhy","Why real estate?"],["reScenario","How do you help a new player pick a property?"]],
+"Gang / Crew Registration":[["gangName","Crew name"],["gangStory","Identity, story, purpose"],["gangRP","What RP besides conflict?"]],
+"Tattoo Artist":[["tattooWhy","Why tattoo artist?"],["tattooStyle","What style/consultation RP do you bring?"]],
+"Staff Team":[["staffWhy","Why staff?"],["staffScenario","Friend is reported — what do you do?"]]
+};
+const typeMap={pd:"Police Department",ems:"EMS / Fire",mechanic:"Mechanic",business:"Business Owner",realestate:"Real Estate",gang:"Gang / Crew Registration",tattoo:"Tattoo Artist",staff:"Staff Team"};
+const select=document.getElementById("applicationType");
+const dynamic=document.getElementById("dynamicQuestionFields");
+const form=document.getElementById("appForm");
+const draftKey="savannahRPApplicationDraft";
+function loadRoleQuestions(){
+  const qs=roleQuestions[select.value]||[];
+  dynamic.innerHTML="";
+  if(!qs.length){dynamic.innerHTML='<p class="dynamic-hint">Choose a type to load role questions.</p>';return;}
+  qs.forEach(([id,label])=>{
+    const d=document.createElement("label");
+    d.innerHTML=`${label}<textarea id="${id}" name="${id}" rows="3" required></textarea>`;
+    dynamic.appendChild(d);
+  });
+}
+select.addEventListener("change",loadRoleQuestions);
+document.querySelectorAll("[data-type]").forEach(a=>a.addEventListener("click",()=>{
+  select.value=typeMap[a.dataset.type]||"";
+  loadRoleQuestions();
+}));
+const urlType=new URLSearchParams(location.search).get("type");
+if(typeMap[urlType]){select.value=typeMap[urlType];loadRoleQuestions();}
+document.getElementById("saveDraft").onclick=()=>{
+  const data=Object.fromEntries(new FormData(form).entries());
+  localStorage.setItem(draftKey,JSON.stringify(data));
+  alert("Draft saved on this device.");
+};
+try{
+  const raw=localStorage.getItem(draftKey);
+  if(raw){
+    const data=JSON.parse(raw);
+    if(data.applicationType){select.value=data.applicationType;loadRoleQuestions();}
+    Object.entries(data).forEach(([k,v])=>{const el=form.elements[k]; if(el && el.type!=="checkbox") el.value=v;});
+  }
+}catch(e){}
+form.addEventListener("submit",e=>{
+  e.preventDefault();
+  const data=Object.fromEntries(new FormData(form).entries());
+  let text=`SAVANNAH RP APPLICATION\n========================\nTYPE: ${data.applicationType}\nDISCORD: ${data.discordName}\nAGE: ${data.age}\nCHARACTER: ${data.characterName}\nTIMEZONE: ${data.timezone}\n\nEXPERIENCE:\n${data.experience}\n\nWHY:\n${data.whyApply}\n\n`;
+  (roleQuestions[data.applicationType]||[]).forEach(([id,label])=>{text+=`${label.toUpperCase()}:\n${data[id]||""}\n\n`;});
+  text+=`AVAILABILITY:\n${data.availability}\n`;
+  document.getElementById("applicationOutput").hidden=false;
+  document.getElementById("generatedApplication").value=text;
+  document.getElementById("applicationOutput").scrollIntoView({behavior:"smooth"});
+});
+document.getElementById("copyApplication").onclick=async()=>{
+  const t=document.getElementById("generatedApplication");
+  await navigator.clipboard.writeText(t.value);
+  document.getElementById("copyStatus").textContent="Copied.";
+};
+</script>
 
 <footer>
   <div class="logo footer-logo"><span>SAVANNAH <b>RP</b></span></div>
   <p>© 2026 Savannah RP. All rights reserved.</p>
-  <p class="legal">Savannah RP is not approved, sponsored, or endorsed by Rockstar Games.</p>
-
+  <p class="legal">Independent roleplay community. Not affiliated with Rockstar Games.</p>
   <div class="footer-links">
-    <a href="guide.html">New Player Guide</a>
-    <a href="directory.html">City Directory</a>
-    <a href="team.html">Owner</a>
-    <a href="applications.html">Applications</a>
-    <a href="updates.html">Updates</a>
-    <a href="tickets.html">Ticket Center</a>
-    <a href="support.html">Support</a>
-    <a href="rules.html">Rules</a>
+    <a href="play.html">Play</a>
+    <a href="city.html">City</a>
+    <a href="apply.html">Apply</a>
     <a href="store.html">Store</a>
+    <a href="help.html">Help</a>
+    <a href="rules.html">Rules</a>
+    <a href="terms.html">Terms</a>
+    <a href="privacy.html">Privacy</a>
+    <a href="refunds.html">Refunds</a>
   </div>
-
 </footer>
-
 <script src="script.js"></script>
-<script>
-const roleQuestions = {
-  "Police Department": [
-    ["pdScenario","How would you handle a traffic stop that suddenly becomes hostile?"],
-    ["pdWhy","What does good police roleplay mean to you?"],
-    ["pdExperience","Do you have previous law-enforcement RP experience? Explain."]
-  ],
-  "EMS / Fire": [
-    ["emsScenario","How would you handle an injured player who is being difficult during medical RP?"],
-    ["emsWhy","What makes good EMS / medical roleplay?"],
-    ["emsExperience","Do you have previous EMS or medical RP experience? Explain."]
-  ],
-  "Mechanic": [
-    ["mechWhy","Why do you want to work as a mechanic?"],
-    ["mechCustomer","How would you create good RP with customers instead of just repairing cars silently?"],
-    ["mechKnowledge","What mechanic/tuning experience do you have in RP?"]
-  ],
-  "Business Owner": [
-    ["businessName","Proposed business name and type"],
-    ["businessConcept","Explain your business concept and how it creates RP for other players."],
-    ["businessStaff","How would you hire/manage employees and keep the business active?"]
-  ],
-  "Real Estate": [
-    ["reWhy","Why do you want to work in real estate?"],
-    ["reScenario","How would you help a new player choose a property without rushing the RP?"],
-    ["reExperience","Any sales, housing, or real-estate RP experience?"]
-  ],
-  "Gang / Crew Registration": [
-    ["gangName","Gang / crew name"],
-    ["gangStory","Describe the group's identity, story, and purpose."],
-    ["gangLeadership","List leadership structure and approximate member count."],
-    ["gangRP","What kind of RP will your group create besides shooting/conflict?"]
-  ],
-  "Tattoo Artist": [
-    ["tattooWhy","Why do you want to roleplay as a tattoo artist?"],
-    ["tattooStyle","What kind of style, consultation, or social RP would you bring?"],
-    ["tattooExperience","Any previous tattoo/shop/customization RP experience?"]
-  ],
-  "Staff Team": [
-    ["staffWhy","Why do you want to help staff Savannah RP?"],
-    ["staffScenario","How would you handle a report involving your friend?"],
-    ["staffConflict","How would you handle two players arguing aggressively in a ticket?"],
-    ["staffExperience","Any previous moderation or community-management experience?"]
-  ]
-};
-
-const select = document.getElementById("applicationType");
-const dynamic = document.getElementById("dynamicQuestionFields");
-const form = document.getElementById("savannahApplication");
-const output = document.getElementById("applicationOutput");
-const generated = document.getElementById("generatedApplication");
-const draftKey = "savannahRPApplicationDraft";
-
-function loadRoleQuestions(){
-  const questions = roleQuestions[select.value] || [];
-  dynamic.innerHTML = "";
-  if(!questions.length){
-    dynamic.innerHTML = '<p class="dynamic-hint">Choose an application type above to load the role-specific questions.</p>';
-    return;
-  }
-  questions.forEach(([id,label])=>{
-    const wrap=document.createElement("div");
-    wrap.className="dynamic-field";
-    wrap.innerHTML=`<label for="${id}">${label}</label><textarea id="${id}" name="${id}" rows="4" required></textarea>`;
-    dynamic.appendChild(wrap);
-  });
-}
-
-function preselectFromURL(){
-  const map={pd:"Police Department",ems:"EMS / Fire",mechanic:"Mechanic",business:"Business Owner",realestate:"Real Estate",gang:"Gang / Crew Registration",tattoo:"Tattoo Artist",staff:"Staff Team"};
-  const type=new URLSearchParams(location.search).get("type");
-  if(map[type]){
-    select.value=map[type];
-    loadRoleQuestions();
-  }
-}
-
-function serializeForm(){
-  const data={};
-  new FormData(form).forEach((v,k)=>data[k]=v);
-  data.rulesAgree=document.getElementById("rulesAgree").checked;
-  data.truthAgree=document.getElementById("truthAgree").checked;
-  return data;
-}
-
-function saveDraft(){
-  localStorage.setItem(draftKey, JSON.stringify(serializeForm()));
-  alert("Application draft saved on this device.");
-}
-
-function restoreDraft(){
-  const raw=localStorage.getItem(draftKey);
-  if(!raw) return;
-  try{
-    const data=JSON.parse(raw);
-    if(data.applicationType){
-      select.value=data.applicationType;
-      loadRoleQuestions();
-    }
-    setTimeout(()=>{
-      Object.entries(data).forEach(([k,v])=>{
-        const el=form.elements[k] || document.getElementById(k);
-        if(!el) return;
-        if(el.type==="checkbox") el.checked=!!v;
-        else el.value=v;
-      });
-    },0);
-  }catch(e){}
-}
-
-select.addEventListener("change",loadRoleQuestions);
-document.getElementById("saveDraft").addEventListener("click",saveDraft);
-document.getElementById("clearDraft").addEventListener("click",()=>{
-  localStorage.removeItem(draftKey);
-  form.reset();
-  dynamic.innerHTML='<p class="dynamic-hint">Choose an application type above to load the role-specific questions.</p>';
-});
-
-form.addEventListener("submit",(e)=>{
-  e.preventDefault();
-  if(!form.reportValidity()) return;
-  const data=new FormData(form);
-  let text=`SAVANNAH RP APPLICATION\n`;
-  text+=`========================\n\n`;
-  text+=`APPLICATION TYPE: ${data.get("applicationType")}\n`;
-  text+=`DISCORD: ${data.get("discordName")}\n`;
-  text+=`AGE: ${data.get("age")}\n`;
-  text+=`CHARACTER: ${data.get("characterName")}\n`;
-  text+=`TIMEZONE: ${data.get("timezone")}\n\n`;
-  text+=`RP EXPERIENCE:\n${data.get("experience")}\n\n`;
-  text+=`WHY I AM APPLYING:\n${data.get("whyApply")}\n\n`;
-  text+=`ROLE-SPECIFIC ANSWERS:\n`;
-  const baseKeys=new Set(["applicationType","discordName","age","characterName","timezone","experience","whyApply","availability"]);
-  for(const [key,val] of data.entries()){
-    if(baseKeys.has(key)) continue;
-    const el=form.elements[key];
-    const label=el?.previousElementSibling?.textContent || key;
-    text+=`\n${label}\n${val}\n`;
-  }
-  text+=`\nAVAILABILITY:\n${data.get("availability")}\n\n`;
-  text+=`I confirm I have read the Savannah RP rules and the information above is truthful.`;
-  generated.value=text;
-  output.hidden=false;
-  output.scrollIntoView({behavior:"smooth",block:"start"});
-});
-
-document.getElementById("copyApplication").addEventListener("click",async()=>{
-  const status=document.getElementById("copyStatus");
-  try{
-    await navigator.clipboard.writeText(generated.value);
-    status.textContent="Application copied. Paste it into the Savannah RP Discord application channel.";
-  }catch(e){
-    generated.select();
-    document.execCommand("copy");
-    status.textContent="Application copied.";
-  }
-});
-
-preselectFromURL();
-restoreDraft();
-</script>
 </body>
 </html>

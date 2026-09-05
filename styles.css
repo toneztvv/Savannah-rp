@@ -560,3 +560,49 @@ a,button{-webkit-tap-highlight-color:transparent}
 .ticket-guide-btn{display:inline-flex;margin:18px 0 0}
 @media(max-width:950px){.tickets-grid{grid-template-columns:repeat(2,1fr)}.ticket-center-callout{grid-template-columns:1fr}}
 @media(max-width:650px){.tickets-page{padding-top:72px}.tickets-hero{padding:75px 5vw 60px}.tickets-grid{grid-template-columns:1fr;padding-left:5vw;padding-right:5vw}.ticket-security,.ticket-bottom{padding-left:5vw;padding-right:5vw}.ticket-center-callout{margin-left:5vw;margin-right:5vw;padding:26px 20px}}
+
+
+/* ===== Simple category hub (v27) ===== */
+.hub-section{padding:70px 5vw 40px;max-width:1200px;margin:0 auto;text-align:center}
+.hub-section h2{margin:8px 0 12px;font:800 clamp(40px,7vw,72px)/.95 'Barlow Condensed',sans-serif;letter-spacing:-1px}
+.hub-lead{max-width:620px;margin:0 auto 34px;color:#9a9a9a;line-height:1.7}
+.hub-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;text-align:left}
+.hub-card{display:block;padding:28px 24px;border:1px solid #3a3022;background:linear-gradient(160deg,#12161a,#0a0c0e);text-decoration:none;color:inherit;min-height:190px;transition:border-color .2s,transform .2s}
+.hub-card:hover{border-color:#b88940;transform:translateY(-2px)}
+.hub-card span{display:block;color:#8d6a35;font:700 12px Inter,sans-serif;letter-spacing:2px}
+.hub-card h3{margin:14px 0 10px;color:#e7c27a;font:800 34px/1 'Barlow Condensed',sans-serif;letter-spacing:1px}
+.hub-card p{margin:0;color:#8f8f8f;line-height:1.6;font-size:14px}
+.hub-status,.server-status-panel{max-width:1200px;margin:20px auto 80px;padding:28px;border:1px solid #3a3022;background:#0b0d0f;display:grid;grid-template-columns:1.1fr 1fr;gap:24px;align-items:center}
+.status-copy h3{margin:6px 0 8px;font:800 36px 'Barlow Condensed',sans-serif}
+.status-copy p{color:#8f8f8f;line-height:1.6}
+.status-stats{display:grid;grid-template-columns:repeat(3,1fr);gap:10px}
+.status-box{border:1px solid #3a3022;padding:16px;background:#090b0d}
+.status-box span{display:block;color:#7d6a4d;font:700 11px Inter,sans-serif;letter-spacing:1px;margin-bottom:8px}
+.status-box strong{font:800 22px 'Barlow Condensed',sans-serif;color:#e8d2a4}
+.status-box i{display:inline-block;width:9px;height:9px;border-radius:50%;background:#36d46c;margin-right:6px;box-shadow:0 0 8px #36d46c}
+.feature-grid{max-width:1200px;margin:0 auto;padding:10px 5vw 40px;display:grid;grid-template-columns:repeat(3,1fr);gap:14px}
+.feature-grid article{border:1px solid #3a3022;background:#0b0d0f;padding:24px}
+.feature-grid article span{color:#8d6a35;font:700 12px Inter,sans-serif;letter-spacing:2px}
+.feature-grid h3{margin:12px 0 8px;font:800 28px 'Barlow Condensed',sans-serif;color:#e7c27a}
+.feature-grid p{margin:0;color:#8f8f8f;line-height:1.6}
+.city-jump{display:flex;flex-wrap:wrap;gap:10px;justify-content:center;padding:10px 5vw 30px}
+.city-jump a{text-decoration:none;border:1px solid #3a3022;color:#c9c5bf;padding:10px 14px;font:700 14px 'Barlow Condensed',sans-serif;letter-spacing:1px}
+.city-jump a:hover{border-color:#b88940;color:#e7c27a}
+.apply-form-wrap{max-width:920px;margin:0 auto;padding:20px 5vw 80px}
+.apply-form label{display:block;margin:0 0 16px;color:#cfc8bb;font:600 13px Inter,sans-serif}
+.apply-form input,.apply-form select,.apply-form textarea{width:100%;margin-top:8px;padding:12px 14px;border:1px solid #3a3022;background:#0a0c0e;color:#f4f1eb;font:500 14px Inter,sans-serif}
+.apply-form .form-grid-2{display:grid;grid-template-columns:1fr 1fr;gap:14px}
+.check-row{display:flex !important;gap:10px;align-items:flex-start}
+.check-row input{width:auto !important;margin-top:3px}
+.form-actions{display:flex;flex-wrap:wrap;gap:10px;margin-top:10px}
+.app-output{margin-top:28px;padding:22px;border:1px solid #3a3022;background:#0b0d0f}
+.app-output[hidden]{display:none !important}
+.dynamic-hint{color:#777;font-size:13px}
+.ticket-security{max-width:900px;margin:10px auto 40px;padding:28px;border:1px solid #5a3d1d;background:#120e0a}
+.ticket-security h2{margin:8px 0 10px;font:800 34px 'Barlow Condensed',sans-serif;color:#e7c27a}
+.ticket-security p{color:#a79a86;line-height:1.7}
+.text-link{color:#c59a54;text-decoration:none;font:700 13px Inter,sans-serif}
+.text-link:hover{color:#e7c27a}
+@media(max-width:900px){
+  .hub-grid,.feature-grid,.status-stats,.hub-status,.server-status-panel,.apply-form .form-grid-2{grid-template-columns:1fr}
+}
