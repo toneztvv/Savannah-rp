@@ -1,0 +1,31 @@
+# Example Nginx site config for Savannah RP
+# Copy to /etc/nginx/sites-available/savannah-rp and symlink into sites-enabled.
+# Point server_name at your domain, then: sudo nginx -t && sudo systemctl reload nginx
+
+server {
+    listen 80;
+    listen [::]:80;
+    server_name YOUR-DOMAIN.COM www.YOUR-DOMAIN.COM;
+
+    root /var/www/savannah-rp;
+    index index.html;
+
+    # Gzip static assets
+    gzip on;
+    gzip_types text/css application/javascript application/json image/svg+xml;
+
+    location / {
+        try_files $uri $uri/ =404;
+    }
+
+    error_page 404 /404.html;
+
+    location = /404.html {
+        internal;
+    }
+
+    location ~* \.(css|js|png|svg|ico|webp|woff2)$ {
+        expires 7d;
+        add_header Cache-Control "public";
+    }
+}

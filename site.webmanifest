@@ -1,9 +1,17 @@
 {
   "name": "Savannah RP",
   "short_name": "Savannah RP",
-  "start_url": "index.html",
+  "description": "Semi-serious Los Santos roleplay — careers, businesses, housing, nightlife, and the streets.",
+  "start_url": "/index.html",
   "display": "standalone",
   "background_color": "#080a0c",
   "theme_color": "#080a0c",
-  "icons": []
+  "icons": [
+    {
+      "src": "favicon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any maskable"
+    }
+  ]
 }

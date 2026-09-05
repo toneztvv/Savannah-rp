@@ -27,7 +27,7 @@ function setServerUI(status, playersText, isOnline){
 
 async function refreshSavannahStatus(){
   if(!SAVANNAH_CFX_SERVER_ID){
-    setServerUI("CONFIG NEEDED", "— / —", false);
+    setServerUI("COMING SOON", "— / —", false);
     return;
   }
 
