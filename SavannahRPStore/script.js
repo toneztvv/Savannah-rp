@@ -13,20 +13,20 @@
   }
 
   /* ---- live server status --------------------------------------------------
-     Drop your public Cfx.re join code between the quotes and status goes live.
-     Example: cfx.re/join/abcd12  ->  SERVER_CODE = "abcd12"
+     Put your public Cfx.re join code between the quotes and the status +
+     player count go live everywhere ([data-server-status] / [data-player-count]).
+     Example:  cfx.re/join/abcd12   ->   SERVER_CODE = "abcd12"
   ------------------------------------------------------------------------- */
   var SERVER_CODE = "";
 
   function paint(statusText, players, state) {
     document.querySelectorAll("[data-server-status]").forEach(function (el) {
       el.textContent = statusText;
-      var dot = el.previousElementSibling || el.querySelector("i");
     });
     document.querySelectorAll("[data-player-count]").forEach(function (el) {
       el.textContent = players;
     });
-    document.querySelectorAll(".pill.js-status, .nav-status").forEach(function (el) {
+    document.querySelectorAll(".js-status").forEach(function (el) {
       el.classList.remove("on", "off");
       if (state === true) el.classList.add("on");
       if (state === false) el.classList.add("off");
@@ -34,32 +34,18 @@
   }
 
   function loadStatus() {
-    if (!SERVER_CODE) { paint("COMING SOON", "— / —", null); return; }
+    if (!SERVER_CODE) { paint("Coming soon", "— / —", null); return; }
     fetch("https://servers-frontend.fivem.net/api/servers/single/" + encodeURIComponent(SERVER_CODE), { cache: "no-store" })
       .then(function (r) { if (!r.ok) throw 0; return r.json(); })
       .then(function (j) {
         var d = j && j.Data;
         if (!d) throw 0;
-        paint("ONLINE", (d.clients || 0) + " / " + (d.sv_maxclients || d.svMaxclients || "?"), true);
+        paint("Online", (d.clients || 0) + " / " + (d.sv_maxclients || d.svMaxclients || "?"), true);
       })
-      .catch(function () { paint("OFFLINE", "— / —", false); });
+      .catch(function () { paint("Offline", "— / —", false); });
   }
   loadStatus();
   if (SERVER_CODE) setInterval(loadStatus, 60000);
-
-  /* ---- reveal on scroll ---- */
-  if (!window.matchMedia("(prefers-reduced-motion: reduce)").matches && "IntersectionObserver" in window) {
-    var io = new IntersectionObserver(function (entries) {
-      entries.forEach(function (e) {
-        if (e.isIntersecting) { e.target.style.opacity = 1; e.target.style.transform = "none"; io.unobserve(e.target); }
-      });
-    }, { threshold: 0.08 });
-    document.querySelectorAll(".section, .card").forEach(function (el) {
-      el.style.opacity = 0; el.style.transform = "translateY(14px)";
-      el.style.transition = "opacity .5s ease, transform .5s ease";
-      io.observe(el);
-    });
-  }
 })();
 
 /* ---- application form generator (apply.html only) ---- */
@@ -111,8 +97,8 @@ function savApplyInit() {
   var copyBtn = document.getElementById("appCopy");
   if (copyBtn) copyBtn.addEventListener("click", function () {
     navigator.clipboard.writeText(out.textContent).then(function () {
-      copyBtn.textContent = "COPIED — PASTE IT IN YOUR DISCORD TICKET";
-      setTimeout(function () { copyBtn.textContent = "COPY APPLICATION"; }, 2500);
+      copyBtn.textContent = "Copied — paste it in your Discord ticket";
+      setTimeout(function () { copyBtn.textContent = "Copy application"; }, 2500);
     });
   });
   render();
